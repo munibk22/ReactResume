@@ -1,16 +1,26 @@
 import {Navbar,Nav,NavDropdown,Form,Button,FormControl} from 'react-bootstrap'
-
+import { BrowserRouter } from 'react-router-dom'
+import About from './About';
+import {Switch, Route} from 'react-router-dom';
+import ReactResume from './ReactResume'
 
 let NavBar = () =>
 {
 return (
 <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
+      <Nav.Link href="/">Home</Nav.Link>
       <Nav.Link href="#link">Link</Nav.Link>
+      <BrowserRouter>
+     
+            <Nav.Link href="about">About1</Nav.Link>
+            
+            <Nav.Link href="resume">React Resume</Nav.Link>
+           
+      </BrowserRouter>
       <NavDropdown title="Dropdown" id="basic-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -50,10 +60,7 @@ style={{width:"26px", height:'25px', marginBottom:"5px"}} >
 </img>User Logout
 
 </span>
-    <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-success">Search</Button>
-    </Form>
+   
   </Navbar.Collapse>
 </Navbar>
 )

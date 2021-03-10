@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Test from './Test'
+import { Test, Football } from './Test'
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -11,10 +12,5 @@ ReactDOM.render(
   document.getElementById('myRoot')
 );
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Test />
-  </React.StrictMode>,
-  document.getElementById('testRoot')
-);
+
 
