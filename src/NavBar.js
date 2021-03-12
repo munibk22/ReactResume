@@ -1,27 +1,27 @@
-import {Navbar,Nav,NavDropdown,Form,Button,FormControl} from 'react-bootstrap'
+import {Navbar,Nav,NavDropdown} from 'react-bootstrap'
 import { BrowserRouter } from 'react-router-dom'
-import About from './About';
-import {Switch, Route} from 'react-router-dom';
-import ReactResume from './ReactResume'
+
+//import { Route} from 'react-router-dom';
+
 
 let NavBar = () =>
 {
 return (
-<Navbar bg="light" expand="lg">
+<Navbar bg="dark" expand="lg" >
 
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto">
-      <Nav.Link href="/">Home</Nav.Link>
-      <Nav.Link href="#link">Link</Nav.Link>
+    <Nav className="mr-auto" style={{color:"seashell"}}>
+      <Nav.Link href="/" style={{color:"#0056b3"}}>Home</Nav.Link>
+      <Nav.Link href="#link" style={{color:"#0056b3"}}>Link</Nav.Link>
       <BrowserRouter>
      
-            <Nav.Link href="about">About1</Nav.Link>
+            <Nav.Link href="about" style={{color:"#0056b3"}}>About1</Nav.Link>
             
-            <Nav.Link href="resume">React Resume</Nav.Link>
+            <Nav.Link href="reactresume" style={{color:"#0056b3"}}>React Resume</Nav.Link>
            
       </BrowserRouter>
-      <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+      <NavDropdown title="Dropdown" id="basic-nav-dropdown" >
         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
@@ -32,7 +32,7 @@ return (
     <span style={{marginLeft:"0px"}}  >
 <button className="btn btn-link btn-sm" style={{fontSize:".8rem", padding:"-1%",marginRight:"5px"}}  >
 
-
+<Nav.Link href="/login">
 <img type="button" src="
 
 
@@ -45,9 +45,10 @@ style={{width:"26px", height:'25px',marginBottom:"3px",  padding:"-1.5%"}}>
 </img>
 
 
-       {} User Login </button>
+       {} User Login</Nav.Link> </button>
+       
        </span>
-
+      
 
        <span style={{fontSize:".7rem"}} >
 

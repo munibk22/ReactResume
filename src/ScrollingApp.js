@@ -1,14 +1,18 @@
-import React,{useState, useRef, useCallback} from 'react'
+import React,{useState} from 'react'
 import UseBookSearch from'./UseBookSearch'
 
 export default function ScrollingApp() {
     const [query, setQuery]=useState('')
     const [pageNumber, setPageNumber ]=useState(1)
-    const observer = useRef()
-const lastBookElementRef = useCallback(node =>{
-console.log(node)
+   // const observer = useRef()
+
+   const lastBookElementRef ='hello'
+   /*
+   useCallback(node =>{
+    let holder='hello'
+console.log(holder)
 })
-    
+    */
     let textValHandler = (e)=>{
 
         setQuery(e.target.value)
@@ -17,7 +21,7 @@ console.log(node)
 
    const {
        books,
-       hasMore,
+     // hasMore,
        loading,
        error
    }= UseBookSearch(query, pageNumber)

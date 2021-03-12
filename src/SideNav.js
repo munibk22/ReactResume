@@ -1,90 +1,85 @@
 import React from'react';
-import {Link, NavLink} from 'react-router-dom'
+import { NavLink} from 'react-router-dom'
 import './App.css'
+import {Navbar} from 'react-bootstrap'
+import myImage from'./munib.jpg'
+
 
 
 function SideNav(){
 
-    return(<nav>    
+    return(<Navbar expand="lg" className="sticky"  style={{ margin:"0", width: "17rem"}}>    
      
 
 
 
-<div  style={{ margin:"0", width: "20rem"}}>
-       <form style={{ backgroundColor: 'white', width:"65%", border:"1px solid grey",
+<Navbar.Collapse>
+       <form style={{ backgroundColor: 'white', width:"95%", border:"1px solid grey",
         height:"", borderRadius:"1%"}}>
        <div className="alert alert-primary" role="alert">
        <h5 style={{color:"white", textAlign:"center"}}>Nav Menu</h5>
 </div> 
 
-<div style={{textAlign:"center"}} ><img alt="" src="" 
-style={{borderRadius:"50%", boxShadow:"8px -1px 5px #ccc"}} ></img></div>
+<div style={{textAlign:"center"}} ><img alt="" src={myImage} 
+style={{borderRadius:"50%", boxShadow:"8px 5px 5px slategray, -.2em 0 .4em rgb(161, 32, 246)", width:"170px",height:'200px'}}  >
+    </img></div>
 <div className=" text-muted"  style={{fontSize:".8em",textAlign:"center"}}>
 <h5>Munib Khan-Software Developer</h5></div>
 
 <ul className="" style={{fontSize:".9em", color:"red",  display:"inline-block"}}>
 <br></br>
 
-<NavLink to='/' exact activeClassName="active"> 
-<li activeClassName="active" style={{backgroundColor:"#737373", color:"powderblue"}}>Home</li></NavLink> 
+<NavLink to='/' exact className="active"> 
+<li className="active" style={{backgroundColor:"#737373", color:"powderblue"}}>
+    Home</li></NavLink> 
 <br></br>
-<NavLink to='/about' activeClassName="active">
-    <li activeClassName="active" style={{backgroundColor:"#737373", 
+<NavLink to='/about' className="active">
+    <li className="active" style={{backgroundColor:"#737373", 
     color:"wheat"}}>About</li></NavLink>
 <br></br>
 <NavLink to="/friends"> 
-   <li activeClassName="active"
-    className="li " style={{backgroundColor:"#737373 ", color:"powderblue"}}>Friends</li>
+   <li 
+    className="li active " style={{backgroundColor:"#737373 ", color:"powderblue"}}>Friends</li>
    </NavLink>
    <br></br>
    <NavLink to="/cars"> 
-   <li activeClassName="active"
-   className="li " style={{backgroundColor:"#737373", color:"wheat"}}>Cars</li>
+   <li  className="li active "
+   style={{backgroundColor:"#737373", color:"wheat"}}>Cars</li>
    </NavLink>
-   <br></br> 
-    
-   <NavLink to="/companies"> 
-   <li activeClassName="active"
-   className="li  btn-link" style={{backgroundColor:" #737373", color:"powderblue"}}>Tech companies</li>
-   </NavLink>
-   <br></br>
-   <NavLink to="/jobs"> 
-   <li activeClassName="active"
-   className="li btn-link" style={{backgroundColor:"#737373", color:"wheat"}}>Jobs</li>
-   </NavLink>
+  
    <br></br>
    <NavLink to="/events"> 
-   <li activeClassName="active"
-   className="li btn-link onclick={this.show}" style={{backgroundColor:"#737373", color:"powderblue"}}>Events</li>
+   <li 
+   className="li btn-link active" style={{backgroundColor:"#737373", color:"powderblue"}}>Events</li>
    </NavLink>
    <br></br>
    <NavLink to="/userregister"> 
-   <li activeClassName="active"
-   className="li btn-link" style={{backgroundColor:"#737373", color:"wheat" }}>Register </li>
+   <li 
+   className="li btn-link active" style={{backgroundColor:"#737373", color:"wheat" }}>Register </li>
    </NavLink>
    <br></br>
    <NavLink to="/userform"> 
-   <li activeClassName="active"
-   className="li btn-link" style={{backgroundColor:"#737373", color:"powderblue" }}>Product Info Form </li>
+   <li 
+   className="li btn-link active" style={{backgroundColor:"#737373", color:"powderblue" }}>Product Info Form </li>
    </NavLink>
    <br></br>
    <NavLink to="/scrolling"> 
-   <li activeClassName="active"
-   className="li btn-link" style={{backgroundColor:"#737373",
+   <li 
+   className="li btn-link active" style={{backgroundColor:"#737373",
     color:"wheat" }}>Scrolling App </li>
    </NavLink>
    <br></br>
-   <NavLink to="/increment" activeClassName="active"> 
-   <li activeClassName="active"
-   className="li btn-link" style={{backgroundColor:"#737373",
+   <NavLink to="/increment" > 
+   <li 
+   className="li btn-link active" style={{backgroundColor:"#737373",
     color:"powderblue" }}>Increment App </li>
   
    </NavLink>
 
    <br></br>
-   <NavLink to='/pokemon' activeClassName="active"> 
-   <li activeClassName="active"
-   className="li btn-link" style={{backgroundColor:"#737373",
+   <NavLink to='/pokemon' > 
+   <li 
+   className="li btn-link active" style={{backgroundColor:"#737373",
     color:"wheat" }}>Pokemon App </li>
    </NavLink>
 
@@ -98,9 +93,9 @@ style={{borderRadius:"50%", boxShadow:"8px -1px 5px #ccc"}} ></img></div>
        
        </form>
       
-       </div>
+       </Navbar.Collapse>
        
-    </nav>)
+    </Navbar>)
 }
 
 export default SideNav;

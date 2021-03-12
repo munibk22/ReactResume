@@ -2,16 +2,57 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.col{
+padding: 0px;
+
+
+}
+.box{
+  height:180px;
+  width:210px;
+  box-shadow: 10px 5px 5px slategray ;
+  background-color: black;
+  margin-top:5rem;
+  display: inline-block;
+ color:seashell;
+ margin-right: 10%;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hexagon
+{
+display:flex;
+	width: 2em;
+	height: 2em;
+	background: #0f0;;
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
 }
+
+
+.hbox
+{ 
+  overflow: hidden;
+	animation: animate linear 4s infinite;
+ /* height: 85%; */
+}
+@keyframes animate
+{
+	0%
+	{
+   
+		filter: hue-rotate(0deg);
+	}
+  50%
+  {
+    
+  }
+	100%
+	{
+    
+		filter: hue-rotate(360deg) ;
+	}
+  }
 
 .App-header {
   background-color: #282c34;
@@ -25,7 +66,16 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #61dafb; 
+text-align: center;
+font-size:2.5rem;
+}
+.item2{
+  color:rgba(246, 149, 84, 0.8);
+  font-size:1.1rem ;
+  
+  text-align: cenleftter;
+ 
 }
 
 @keyframes App-logo-spin {
@@ -40,13 +90,122 @@
 .active{
   color:red;
   list-style: none;
+  border-radius: 999px;
 }
 
 li{
   display:flex;
   justify-content: space-evenly;
-  width: 125%;
+  width: 130%;
 
 }
 
 
+.resumedetails{
+  background-color: #192846;
+  color:seashell;
+  font-size: .9rem;
+  
+}
+
+.resumecomponents{
+  border: 1.5px;
+  border-color:white;
+  border-style: solid;
+  /*  text-align: left; */
+}
+
+
+  
+
+.fancy {
+  line-height: .8;
+  margin-bottom: 5%;
+  
+  text-align: center;
+   display: flex;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+.fancy span {
+  /* display: inline-block; */
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  justify-content: center;
+  content: " ";
+  position: absolute;
+ 
+  border-bottom: 1px solid red;
+  border-top: 1px solid black;
+  top: 24px;
+  width: 48%;
+  /* max-width: 45%; */
+  overflow: auto;
+  min-width: 1vw;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+
+
+hr{
+  max-width: 50%;
+  min-width: auto;
+  background-image:linear-gradient(to right, rgba(204, 25, 25, 0), rgba(184, 45, 45, 0.75), rgba(0, 0, 0, 0));
+    width: 92%;
+height: 1px;
+    clear:5%;
+  
+}
+
+.hrNew{
+  
+  position:relative;
+  left: 23%;
+ overflow: hidden;
+ }
+
+ .hrEnd{
+  overflow: hidden;
+  position:relative;
+  right: 23%;;
+ 
+ }
+ .bgColor{
+   background-color: seashell;
+   color:black;
+
+ }
+
+ .fColor{
+  color:rgb(28, 230, 21);
+}
+
+.sticky{
+  position: sticky;
+  top:0;
+}
+
+.relative{
+  position: relative;
+}
+
+.absolute{
+  position:absolute;
+}
+
+#center { 
+  top:0;                    
+  bottom:0;                          
+  margin-left:15%;  
+  right:0;                            
+} 
