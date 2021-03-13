@@ -13,17 +13,6 @@ this.state= {
     document.getElementById('skills').setAttribute("className", "bgColor");
 };
 
- btnClickHandlerText=()=>{
-    document.getElementById('skills').setAttribute("className", "fColor col");
-
-}
-
- btnClickHandlerOriginal=()=>{
-
-document.getElementById('skills').setAttribute("className", "resumecomponents col");
-
-}
-
     render(){
     return (
         <Container style={{}} className="resumecomponents resumedetails" id='skills'>
@@ -52,10 +41,6 @@ document.getElementById('skills').setAttribute("className", "resumecomponents co
 
 </div>
 
-
-
-
-         
  
     
     <div >
@@ -77,21 +62,11 @@ Back End Development:
 
 
     <div className="col">
-    Change Text Color:
+    Remove Component:
       <p></p>
       <button className="btn btn-success btn-sm" onClick={this.btnClickHandlerText}>Click ME</button>
-
-      <p></p>
-      
-      Change Background Color:
-      <p></p>
-      <button className="btn btn-primary btn-sm" onClick={this.btnClickHandler}>Click ME</button>
-      <p></p>
-      Orginal State:
-      <p></p>
-      <button className="btn btn-danger btn-sm" onClick={this.btnClickHandlerOriginal}>Click ME</button>
-      
-    </div>
+</div>
+     
     </Row>
 {/* <Row>
 <Col>

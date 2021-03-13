@@ -75,7 +75,8 @@ function App() {
      
       </div>
 
-      <FooterPage />
+<div className='absolutebottom'> <FooterPage  /> </div>
+     
 
    </BrowserRouter>
   );

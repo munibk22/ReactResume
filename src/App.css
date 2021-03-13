@@ -2,9 +2,16 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  margin:auto;
+}
+
 .bx-wrapper{
   position: relative;
-  margin: 0 auto;
+  margin: auto;
   padding: 0;
   *zoom: 1;
   z-index: 0;
@@ -14,14 +21,28 @@ section {
   text-align: center;
 }
 .componentBox{
+  margin: 2%;
+  margin-left: 2%;
+background-color: #152738;
 
-flex: 25%;
-margin:8%;
-margin-bottom: 1%;
-background-color: #1d2833;
+
 transition: all .3s ease-in-out; 
-min-width:34%;
- max-width: 35%;
+box-shadow: 5px 5px 4px slategray ;
+ max-width: 460px;
+ border-radius: 5%;
+}
+
+.componentBox2{
+  transition: all .3s ease-in-out; 
+  margin: 4%;
+  background: rgb(2, 18, 61);
+background: linear-gradient(to right bottom, 
+rgba(2, 18, 61, 1.7),
+rgba(255, 255, 255, 0.3)
+);
+
+box-shadow: 5px 5px 4px slategray ;
+ max-width: 390px;
  border-radius: 5%;
 }
 
@@ -38,6 +59,9 @@ min-width:34%;
   transform: scale(1.02); 
   }
 
+  .componentBox2:hover { 
+    transform: scale(1.02); 
+    }
 .componentBoxB{
   display:flex;
   flex-direction:row;
@@ -56,7 +80,7 @@ padding: 0px;
   position: relative;
   /* background-position: 50% calc(50% + 0px); width:70vw; */
 
-  max-height: 720px;
+  max-height: 750px;
   background-attachment: scroll;
   width:100%;
 }
@@ -69,7 +93,7 @@ padding: 0px;
   height:180px;
   width:210px;
   box-shadow: 10px 5px 5px slategray ;
-  background-color: black;
+  background-color: #152738;
 
   display: inline-block;
  color:seashell;
@@ -77,17 +101,17 @@ padding: 0px;
  margin: auto;
 }
 
-.about{
+.dynamic{
     text-align: center;
     padding-top: 4rem!important;
-    width:60%;
+    width:75%;
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
     margin:auto;
 }
-
+.bcolor{
+    background-color: #152738;
+}
 
 .hexagon
 {
@@ -115,7 +139,7 @@ display:flex;
 }
 
 .App-link {
-  color: #61dafb; 
+  color: powderblue; 
 text-align: center;
 font-size:1.8rem;
 
@@ -201,15 +225,15 @@ li{
 }
 
 
+hr.hrRed{
 
-hr{
   max-width: 50%;
   min-width: auto;
   background-image:linear-gradient(to right, rgba(204, 25, 25, 0), rgba(184, 45, 45, 0.75), rgba(0, 0, 0, 0));
     width: 92%;
 height: 1px;
     clear:5%;
-  
+
 }
 
 .hrNew{
@@ -228,7 +252,7 @@ height: 1px;
  .bgColor{
    background-color: seashell;
    color:black;
-
+   border-radius: 5%;
  }
 
  .fColor{
@@ -249,6 +273,12 @@ height: 1px;
 .absolute{
   position:absolute;
   z-index: 2;
+}
+
+.absolutebottom{
+  position:absolute;
+  
+width:98vw;
 }
 
 #center { 

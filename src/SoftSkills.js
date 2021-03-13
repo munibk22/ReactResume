@@ -6,7 +6,7 @@ export default function SoftSkills() {
 
      
     const btnClickHandler=()=>{ 
-        document.getElementById('foo').setAttribute("class", "bgColor col");
+        document.getElementById('foo').setAttribute("class", "bgColor col ");
     };
 
     const btnClickHandlerText=()=>{
@@ -22,9 +22,9 @@ const btnClickHandlerOriginal=()=>{
 
     return (
 
-      <div className="resumecomponents" style={{}}>
+      <div id="foo" className="resumecomponents" style={{}}>
            
-  <div  id="foo">
+  <div  >
   <div className="App-link">SOFT SKILLS
         <hr className="newhr"></hr>
       </div>
@@ -37,6 +37,7 @@ const btnClickHandlerOriginal=()=>{
         
         <li>SVG</li>
         <li>BOOT STRAP</li>
+        <li>REACT BOOT STRAP</li>
         <li>SKYCONS</li>
         <li>UNDRAW</li>
         <li>PAPERJS</li>  
