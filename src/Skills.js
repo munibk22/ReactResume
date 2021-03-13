@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container,Row} from'react-bootstrap';
+import {Container,Row,Col }from'react-bootstrap';
 
 class Skills extends React.Component {
 
@@ -10,7 +10,7 @@ this.state= {
 }
 };
  btnClickHandler=()=>{ 
-    document.getElementById('skills').setAttribute("className", "bgColor col");
+    document.getElementById('skills').setAttribute("className", "bgColor");
 };
 
  btnClickHandlerText=()=>{
@@ -26,33 +26,45 @@ document.getElementById('skills').setAttribute("className", "resumecomponents co
 
     render(){
     return (
-        <Container style={{padding:"0px"}} className="resumedetails" id='skills'>
-        <div className="item1 App-link"> Skills
+        <Container style={{}} className="resumecomponents resumedetails" id='skills'>
+        <div className="App-link">TECH  SKILLS
         <hr className="new1"></hr>
       </div>
+      
+      <Row  style={{width:"", marginLeft:"1.5%"}}>
 
-      <div className="row"  >
-    <div className="col" >
-    <p  md="" className="item2 ">
-Programming: 
+<div>   
+<Col> 
+<p  className="item2 ">
+    Frontend: 
         </p > 
+ 
 
-<ul>
-        <Row>HTML5</Row>
-        <Row>CSS</Row>
-        <Row>JAVASCRIPT</Row>
-        <Row>C#</Row>
-        <Row>jQUERY</Row>
+<ul style={{lineHeight:"2.5"}}> 
+    <Row>HTML5</Row>
+    <Row>CSS</Row>
+    <Row>JAVASCRIPT</Row>       
+    <Row>jQUERY</Row>
+</ul>
+
+</Col>
+       
+
+</div>
+
+
+
+
          
-
-        </ul>  
-    </div>
-    <div className="col" >
-    <p  md="" className="item2 ">
+ 
+    
+    <div >
+    <Col> 
+    <p  className="item2 ">
 Back End Development: 
         </p > 
 
-<ul>
+<ul style={{lineHeight:"2.5"}}>
         <Row>MICROSOFT SQL</Row>
         <Row>AXIOS</Row>
         <Row>C#</Row>
@@ -60,17 +72,27 @@ Back End Development:
         <Row>JSON and AJAX </Row>    
 
         </ul>
+        </Col> 
     </div>
+
+
     <div className="col">
     Change Text Color:
+      <p></p>
       <button className="btn btn-success btn-sm" onClick={this.btnClickHandlerText}>Click ME</button>
+
       <p></p>
       
-     
+      Change Background Color:
+      <p></p>
+      <button className="btn btn-primary btn-sm" onClick={this.btnClickHandler}>Click ME</button>
+      <p></p>
       Orginal State:
+      <p></p>
       <button className="btn btn-danger btn-sm" onClick={this.btnClickHandlerOriginal}>Click ME</button>
+      
     </div>
-  </div>
+    </Row>
 {/* <Row>
 <Col>
 <div  md="" className="item2 ">

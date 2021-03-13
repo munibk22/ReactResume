@@ -12,32 +12,46 @@ import Sidenav from'./SideNav';
 import Events from './Events'
 import ItemDetail from'./ItemDetail';
 import Home from './Home'
+import Resume2 from './Resume2'
+import FooterPage from './Footer'
 
 
 function App() {
  
   return ( 
-  <BrowserRouter>
-  <br />
+  <BrowserRouter  style={{height: "100%"}} >
+ 
   <NavBar />
-  <br />
+  
+   
+  <div style={{paddingLeft: "0px", marginLeft:'', maxWidth:""}}>
   
  
- 
-  <Container style={{paddingLeft: "1px", marginLeft:'0px', maxWidth:"95vw"}}>
-  
- 
-  <Row md="">
+  <div>
     
-    <Col sm={2.5} className='a' md="" style={{width: ""}}> <Sidenav /></Col>
+    
+    <section className=''  style={{ float:''}} >
+            
+            <div expand="md"  className='componentBoxB' style={{position:"" }}> <Sidenav /></div> 
+            <div  className='componentBoxC' style={{ }}> <Route path='/htmlresume' exact component={Resume2}  
+             />  </div> 
+            <div  className=' absolute marginautomod'>
+    <Route path='/' exact component={Home}></Route> 
+    
+    </div>
+
+     </section>
 
 
-    <Col  sm={6} >
-    <Route path='/reactresume' exact component={ReactResume} />
-    <Route path='/' exact component={Home}></Route>
-    <Route path ="/about" exact component ={About} ></Route>
-    </Col>
+    {/* <div id='' style={{marginLeft:"-15px"}}> <Route path='/reactresume' exact component={ReactResume} />
+     </div>
+<div id='center'>    <Route path='/' exact component={Home}></Route>
+<Route path ="/about" exact component ={About} ></Route>
+<Route path='/scrolling' exact compoent={ScrollingApp}> </Route>
 
+ </div> */}
+
+  
 {/* 
         <Col sm={2}className='b' style={{marginLeft:"20%" }}>
         
@@ -56,20 +70,12 @@ function App() {
 
         </Col> */}
         
-       
-        <Route path='/scrolling' exact compoent={ScrollingApp}> </Route>
-        
-
-        
       
-      
-
-      
-      </Row>  
+      </div>  
      
-      </Container>
+      </div>
 
-      
+      <FooterPage />
 
    </BrowserRouter>
   );

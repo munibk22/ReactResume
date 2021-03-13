@@ -1,5 +1,5 @@
 import React from 'react'
-import {Row,Col, Container} from 'react-bootstrap'
+import {Row,Col} from 'react-bootstrap'
 import  './App.css'
 
 export default function SoftSkills() {
@@ -10,75 +10,78 @@ export default function SoftSkills() {
     };
 
     const btnClickHandlerText=()=>{
-        document.getElementById('foo').setAttribute("class", "fColor col");
+        document.getElementById('foo').setAttribute("class", "fColor ");
 
     }
 
 const btnClickHandlerOriginal=()=>{
 
-    document.getElementById('foo').setAttribute("class", "resumecomponents col");
+    document.getElementById('foo').setAttribute("class", "resumecomponents ");
 
 }
 
     return (
 
-      <Container style={{padding:"0px"}}>
-            <Row className="resumedetails"  style={{width: ""}}>
-  <Col className="resumecomponents" id="foo">
-  <div className="item1 App-link">Soft Skills
+      <div className="resumecomponents" style={{}}>
+           
+  <div  id="foo">
+  <div className="App-link">SOFT SKILLS
         <hr className="newhr"></hr>
       </div>
     
-        <Row>
-        <Col>
-      <p className="item2">
-      Web Development:                
-        </p> 
-        <ul>
-        <Row>SVG</Row>
-        <Row>BOOT STRAP</Row>
-        <Row>SKYCONS</Row>
-        <Row>UNDRAW</Row>
-        <Row>PAPERJS</Row>  
-        </ul>
+      <div className="row"  >
+    <div className="col" >
+      <div className="item2">
+         Web Development:                
+        </div> 
+        
+        <li>SVG</li>
+        <li>BOOT STRAP</li>
+        <li>SKYCONS</li>
+        <li>UNDRAW</li>
+        <li>PAPERJS</li>  
+       
      
-      </Col>
+      </div>
       <Col>
-      <p className="item2">
-        <span  >Software:</span>
-        </p>
+       
+        <div className="item2">Software:</div>
+        
         
         <ul>
-        <Row>MICROSOFT OFFICE</Row>
-        <Row>ADOBE CREATIVE SUITE</Row>
-        <Row>MICROSOFT ACCESS</Row>
-        <Row></Row>
+        <li>MICROSOFT OFFICE</li>
+        <li>ADOBE CREATIVE SUITE</li>
+        <li>MICROSOFT ACCESS</li>
+        <li></li>
       
         </ul>  
       </Col>
 
       <Col>
       Change Text Color:
+      <p></p>
       <button className="btn btn-success btn-sm" onClick={btnClickHandlerText}>Click ME</button>
 
       <p></p>
       
       Change Background Color:
+      <p></p>
       <button className="btn btn-primary btn-sm" onClick={btnClickHandler}>Click ME</button>
       <p></p>
       Orginal State:
+      <p></p>
       <button className="btn btn-danger btn-sm" onClick={btnClickHandlerOriginal}>Click ME</button>
       </Col>
-      </Row>
+      </div>
      
 
 
 
 
-      </Col>
+      </div>
 
     
-  </Row>
-  </Container>
+
+  </div>
     
 )}

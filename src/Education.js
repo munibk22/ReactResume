@@ -15,13 +15,12 @@ export default function Education() {
       </div>
 
 <ul>
-  <li>Software Development at Sabio Academy </li>
 <li>Software Programming at  University of Toledo, Toledo, OH 
 AUG 2019 - Fall 2020: Graduated </li>
 
 <li>
 Information Technology at Lincoln University, Jefferson City, MO 
- 2005 - 2009: Transferred
+ 2005 - 2009: Transferred (90 Credit Hours Completed)
 </li>
 <li>
 PROJECTS
@@ -33,7 +32,7 @@ I created an online sales website for my business.
 
   </Col>
 
-    <Col className="resumecomponents">
+    {/* <Col className="resumecomponents">
     <span className=" title2">EXPERIENCE
    <hr></hr>
         
@@ -50,7 +49,7 @@ I worked to maintain, repair, and update computer systems in the computer depart
 </span>
     </Col>
 
-        <Col className="resumecomponents"> test</Col>
+        <Col className="resumecomponents"> test</Col> */}
         </Row>
     )
 }

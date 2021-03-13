@@ -1,23 +1,93 @@
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bx-wrapper{
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  *zoom: 1;
+  z-index: 0;
+}
+
 .App {
   text-align: center;
 }
+.componentBox{
 
-.col{
+flex: 25%;
+margin:8%;
+margin-bottom: 1%;
+background-color: #1d2833;
+transition: all .3s ease-in-out; 
+min-width:34%;
+ max-width: 35%;
+ border-radius: 5%;
+}
+
+.resumecomponents{
+
+   text-align: center; 
+   line-height: 1.8;
+  font-size: .9rem;
+  color: seashell;
+}
+
+
+.componentBox:hover { 
+  transform: scale(1.02); 
+  }
+
+.componentBoxB{
+  display:flex;
+  flex-direction:row;
+  }
+  .componentBoxC{
+    flex: 50%;
+    }
+/* .col{
 padding: 0px;
 
+} */
 
+
+.imgstyle {
+  cursor: default;
+  position: relative;
+  /* background-position: 50% calc(50% + 0px); width:70vw; */
+
+  max-height: 720px;
+  background-attachment: scroll;
+  width:100%;
 }
+
+ .img {
+  background-color:transparent;
+}
+
 .box{
   height:180px;
   width:210px;
   box-shadow: 10px 5px 5px slategray ;
   background-color: black;
-  margin-top:5rem;
+
   display: inline-block;
  color:seashell;
  margin-right: 10%;
-
+ margin: auto;
 }
+
+.about{
+    text-align: center;
+    padding-top: 4rem!important;
+    width:60%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin:auto;
+}
+
 
 .hexagon
 {
@@ -29,33 +99,8 @@ display:flex;
 
 }
 
-
-.hbox
-{ 
-  overflow: hidden;
-	animation: animate linear 4s infinite;
- /* height: 85%; */
-}
-@keyframes animate
-{
-	0%
-	{
-   
-		filter: hue-rotate(0deg);
-	}
-  50%
-  {
-    
-  }
-	100%
-	{
-    
-		filter: hue-rotate(360deg) ;
-	}
-  }
-
 .App-header {
-  background-color: #282c34;
+  background-color: #212529;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -63,18 +108,24 @@ display:flex;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: "Lato","sans-serif";
+  line-height: 1.8;
+  font-size: 1.5rem;
+  color: #737373;
 }
 
 .App-link {
   color: #61dafb; 
 text-align: center;
-font-size:2.5rem;
+font-size:1.8rem;
+
 }
+
 .item2{
-  color:rgba(246, 149, 84, 0.8);
-  font-size:1.1rem ;
+  color:wheat;
+  font-size:1rem ;
   
-  text-align: cenleftter;
+  text-align: center;
  
 }
 
@@ -102,18 +153,12 @@ li{
 
 
 .resumedetails{
-  background-color: #192846;
+  
   color:seashell;
-  font-size: .9rem;
+
   
 }
 
-.resumecomponents{
-  border: 1.5px;
-  border-color:white;
-  border-style: solid;
-  /*  text-align: left; */
-}
 
 
   
@@ -193,19 +238,134 @@ height: 1px;
 .sticky{
   position: sticky;
   top:0;
+  
 }
 
 .relative{
   position: relative;
+  z-index: -2;
 }
 
 .absolute{
   position:absolute;
+  z-index: 2;
 }
 
 #center { 
-  top:0;                    
-  bottom:0;                          
-  margin-left:15%;  
-  right:0;                            
+ /* margin: auto;    */
+  margin-top: 5% ;
+  margin-bottom: 50%;
+  margin-left: 25%;
+  
 } 
+
+.backdrop{
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc, #000000,  #2A272A,  #4B4A54
+
+  100%);
+  width: 100%;
+  height: 100%;
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  left: 0;
+/* 
+  #000000
+  #2A272A
+  #4B4A54
+  #677381
+  #82A0AA
+  #A3CFCD
+   */
+}
+.bx-viewport ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+
+.sidescroll {
+  width: 50px;
+  position: relative;
+   animation: animatedBackground 16s linear infinite;
+}
+
+@keyframes animatedBackground {
+  from { position: 0 0; }
+  to { position: -400px 0; }
+}
+
+
+
+
+.colorhover:hover
+{
+        background:#53a7ea;
+}
+
+.growhover:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+
+.threedhover:hover
+{
+        box-shadow:
+                1px 1px #e21de9,
+                2px 2px #e21de9,
+                3px 3px #53a7ea;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
+
+.rotated {
+  animation: rotated 12s infinite linear;
+ 
+}
+@keyframes rotated {
+ 
+}
+
+.marginauto{
+   margin: auto; 
+
+}
+.marginautomod{
+  /* margin: auto; */
+  top:15%;
+  bottom:50%;
+
+  left:40%;
+}
+
+.rotate{
+  animation: App-logo-spin linear 10s infinite;
+}
+
+.hbox
+{ 
+  overflow: hidden;
+	animation: animate linear 4s infinite;
+ /* height: 85%; */
+}
+@keyframes animate
+{
+	0%
+	{
+   
+		filter: hue-rotate(0deg);
+	}
+  50%
+  {
+    
+  }
+	100%
+	{
+    
+		filter: hue-rotate(360deg) ;
+	}
+  }

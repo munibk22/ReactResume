@@ -1,28 +1,32 @@
 import React from'react';
 import { NavLink} from 'react-router-dom'
 import './App.css'
-import {Navbar} from 'react-bootstrap'
-import myImage from'./munib.jpg'
+import {Nav } from 'react-bootstrap'
+import myImage from'./pics/munib.jpg'
 
 
 
 function SideNav(){
 
-    return(<Navbar expand="lg" className="sticky"  style={{ margin:"0", width: "17rem"}}>    
+    return(
+    
+    
+    <Nav  expand="md" className="sticky " style={{ margin:"0", width: "15.5rem",
+     height:"94vh" ,overflow: "hidden"}}>    
      
 
-
-
-<Navbar.Collapse>
-       <form style={{ backgroundColor: 'white', width:"95%", border:"1px solid grey",
+<div>
+       <form style={{ backgroundColor: 'white', width:"100%", border:"1px solid grey",
         height:"", borderRadius:"1%"}}>
        <div className="alert alert-primary" role="alert">
-       <h5 style={{color:"white", textAlign:"center"}}>Nav Menu</h5>
+       <h3 style={{color:"white", textAlign:"center"}}><strong> Welcome</strong></h3>
 </div> 
 
-<div style={{textAlign:"center"}} ><img alt="" src={myImage} 
-style={{borderRadius:"50%", boxShadow:"8px 5px 5px slategray, -.2em 0 .4em rgb(161, 32, 246)", width:"170px",height:'200px'}}  >
-    </img></div>
+<div style={{textAlign:"center"}} >
+    <NavLink to='/'>
+    <img alt="" src={myImage} className="munib"
+style={{borderRadius:"50%", boxShadow:"8px 5px 5px slategrey, -.2em 0 .4em slategrey", width:"170px",height:'200px'}}  >
+    </img></NavLink></div>
 <div className=" text-muted"  style={{fontSize:".8em",textAlign:"center"}}>
 <h5>Munib Khan-Software Developer</h5></div>
 
@@ -93,9 +97,9 @@ style={{borderRadius:"50%", boxShadow:"8px 5px 5px slategray, -.2em 0 .4em rgb(1
        
        </form>
       
-       </Navbar.Collapse>
+       </div>
        
-    </Navbar>)
+    </Nav >)
 }
 
 export default SideNav;
