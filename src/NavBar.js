@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom'
 let NavBar = () =>
 {
 return (
-<Navbar bg="dark" expand="md" style={{color:"white", height:'60px'}}  >
+<Navbar bg="dark" variant='light' expand="md" style={{color:"white", height:'60px'}}  >
 
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">

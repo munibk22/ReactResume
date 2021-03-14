@@ -22,7 +22,7 @@ const btnClickHandlerOriginal=()=>{
 
     return (
 
-      <div id="foo" className="resumecomponents" style={{}}>
+      <div id="foo" className="resumecomponents " style={{}}>
            
   <div  >
   <div className="App-link">SOFT SKILLS
@@ -34,29 +34,31 @@ const btnClickHandlerOriginal=()=>{
       <div className="item2">
          Web Development:                
         </div> 
-        
-        <li>SVG</li>
-        <li>BOOT STRAP</li>
-        <li>REACT BOOT STRAP</li>
-        <li>SKYCONS</li>
-        <li>UNDRAW</li>
-        <li>PAPERJS</li>  
+        <ul style={{fontSize:'.9em'}}>
+
+        <Row>SVG</Row>
+        <Row>BOOT STRAP</Row>
+        <Row> REACT BOOT  </Row>
+        <Row>SKYCONS</Row>
+        <Row>UNDRAW</Row>
+        <Row>PAPERJS</Row>  
        
-     
+        </ul>
+
       </div>
-      <Col>
+      <div>
        
         <div className="item2">Software:</div>
         
         
-        <ul>
-        <li>MICROSOFT OFFICE</li>
-        <li>ADOBE CREATIVE SUITE</li>
-        <li>MICROSOFT ACCESS</li>
-        <li></li>
+        <ul style={{ fontSize:'.9em'}}>
+        <Row>MICROSOFT OFFICE</Row>
+        <Row>ADOBE CREATIVE SUITE</Row>
+        <Row>MICROSOFT ACCESS</Row>
+        <Row></Row>
       
         </ul>  
-      </Col>
+      </div>
 
       <Col>
       Change Text Color:

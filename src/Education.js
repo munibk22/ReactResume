@@ -7,27 +7,38 @@ export default function Education() {
   <Col className="resumecomponents">
   
 
-<div className="grid-item grid-item-5">
-  <span className=" title2">EDUCATION
+<div className="">
+  <span className=" App-link">EDUCATION
    <hr>       
         </hr>
       </span>
       </div>
 
-<ul>
-<li>Software Programming at  University of Toledo, Toledo, OH 
-AUG 2019 - Fall 2020: Graduated </li>
+<div style={{marginLeft:'2%',fontSize:'.8rem'}}>
+  <div className='section  ' > 
+<Row>The  University of Toledo</Row>
 
-<li>
-Information Technology at Lincoln University, Jefferson City, MO 
- 2005 - 2009: Transferred (90 Credit Hours Completed)
-</li>
-<li>
+<Row>Toledo, OH   </Row>
+<Row> AAB in Programming  </Row>
+<Row> and Software Development  </Row>
+<Row> AUG 2019 - Fall 2020  </Row>
+<Row>  Graduated </Row>
+</div>
+
+<div className='  ' >
+<Row>Lincoln University </Row>
+<Row>Jefferson City, MO   </Row>
+<Row>
+BS in Information Technology</Row>
+<Row>  2005 - 2009: Transferred (90 Credit Hours Completed) </Row>
+
+</div>
+<Row>
 PROJECTS
 SKKITCHENSTOREONLINE.COM — Website
 I created an online sales website for my business.
-</li>
-</ul> 
+</Row>
+</div> 
 
 
   </Col>

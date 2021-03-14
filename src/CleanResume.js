@@ -3,12 +3,8 @@ import Softskills from'./SoftSkills'
 import Skills from'./Skills'
 import {Row, Col} from 'react-bootstrap';
 import Dynamic from './Dynamic'
-import Education from './Education'
-import Sunset from './pics/sunset.jpg'
-import Moon from './pics/moon.png'
-import Moonb from './pics/moonb.jpeg'
 
-export default function Resume2() {
+export default function CleanResume() {
     return (
         <div  >
             
@@ -34,43 +30,27 @@ export default function Resume2() {
 </Col>
 
 <Col  md="auto">
-    <h4 style={{color:"white", textAlign:"", margin:"auto"}}>Munib Khan Resume</h4>
+    <h3 style={{color:"white", textAlign:"", margin:"auto"}}>Munib Khan Resume</h3>
 </Col>
-
-
-{/* <div > 
-<hr className="hrEnd"></hr>
-<p></p>
- <hr className="hrEnd"></hr>
-  </div> */}
 
 </Row>
 
 <img 
-src= {Moonb}
-
- alt="" className='imgstyle' 
+src= "https://images.unsplash.com/photo-1506102383123-c8ef1e872756?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHw%3D&w=1000&q=80"
+ alt=""
+ className='imgstyle' 
  style={{}}   />
 
 <div className='backdrop'></div>
 
-<div className="absoluteTop backdropred " style={{}}>
-      
- </div> 
-{/* <div className="absoluteTop componentBoxB" style={{ maxHeight:'100%', height:'900px', overflow:'hidden', zIndex:"2"}}>
-      <SideNav  />
- </div>  */}
-  <div className=" moon "
-style={{color:'white', marginLeft:'8%',marginRight:'25%'}}>
-    < img src= {Moon} className='up ' alt='' />
- </div>
-    <div className="absolute marginautomod "
-style={{color:'white', marginLeft:'5%'}}>
-    <p></p><h1><strong>Hello World</strong> </h1></div>
-    
+
+
+    <div className="absolute marginautomod"
+style={{color:'white'}}>
+    <p></p><h1><strong>Hello World</strong> Hello World</h1></div>
+
  </div>
 
- 
 <section style={{maxWidth:"98vw"}}> 
 <div className='section' style={{ maxWidth:""}}>
     <Dynamic /></div> 
@@ -83,7 +63,7 @@ style={{color:'white', marginLeft:'5%'}}>
 
     <div className='componentBox2 section ' ><Skills /></div> 
     <div className='componentBox2 section '><Softskills /></div>
-    <div className='componentBox2 section'><Education /></div>
+    <div className='componentBox2 section'><Softskills /></div>
     
 
 

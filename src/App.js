@@ -1,58 +1,63 @@
-import React from 'react';
-import NavBar from'./NavBar'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Incrementb from './Increment';
-import Pass from'./PokemonApp'
-import ScrollingApp from'./ScrollingApp'
-import {Container,Row, Col } from 'react-bootstrap';
-import {BrowserRouter, Route} from 'react-router-dom';
-import ReactResume from './ReactResume'
-import About from './About';
-import Sidenav from'./SideNav';
-import Events from './Events'
-import ItemDetail from'./ItemDetail';
-import Home from './Home'
-import Resume2 from './Resume2'
-import FooterPage from './Footer'
-
+import React from "react";
+import NavBar from "./NavBar";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Incrementb from "./Increment";
+import Pass from "./PokemonApp";
+import ScrollingApp from "./ScrollingApp";
+import { Container, Row, Col } from "react-bootstrap";
+import { BrowserRouter, Route } from "react-router-dom";
+import ReactResume from "./ReactResume";
+import About from "./About";
+import Sidenav from "./SideNav";
+import Events from "./Events";
+import ItemDetail from "./ItemDetail";
+import Home from "./Home";
+import Resume2 from "./Resume2";
+import FooterPage from "./Footer";
+import CleanResume from'./CleanResume'
 
 function App() {
- 
-  return ( 
-  <BrowserRouter  style={{height: "100%"}} >
- 
-  <NavBar />
-  
-   
-  <div style={{paddingLeft: "0px", marginLeft:'', maxWidth:""}}>
-  
- 
-  <div>
-    
-    
-    <section className=''  style={{ float:''}} >
-            
-            <div expand="md"  className='componentBoxB' style={{position:"" }}> <Sidenav /></div> 
-            <div  className='componentBoxC' style={{ }}> <Route path='/htmlresume' exact component={Resume2}  
-             />  </div> 
-            <div  className=' absolute marginautomod'>
-    <Route path='/' exact component={Home}></Route> 
-    
-    </div>
+  return (
+    <BrowserRouter>
 
-     </section>
+      <div className="" style={{position:'relative'}}>
+            <NavBar />
+      </div>
 
+      <div style={{ paddingLeft: "0px", maxWidth: "" }}>
+        <div className="" style={{height:''}} >
+          <section  >
+                  
+            <div  className="componentBoxB"  style={{ maxHeight:''}}>
+         <Route  path="/" expand="md" exact component={Sidenav} /> 
+            </div>
 
-    {/* <div id='' style={{marginLeft:"-15px"}}> <Route path='/reactresume' exact component={ReactResume} />
+            {/* <div expand="md"  className='componentBoxB' style={{ maxHeight:'700px' }}> <Sidenav /></div>  */}
+
+            <div className="componentBoxC" style={{}}>
+            <Route path ="/about" exact component ={About} ></Route>
+              <Route path="/htmlresume" exact component={Resume2} />
+              <Route path='/reactresume' exact component={Resume2} />
+              <Route path='/cleanresume' exact component={CleanResume} />
+              
+            </div>
+
+            <div className=" absolute marginautomod" style={{ maxHeight:'',height:''}}>
+              <Route path="/" exact component={Home}></Route>
+              
+            </div>
+          </section>
+
+{/* < div className='absolutebottom'> <FooterPage /> </div> */}
+          {/* <div id='' style={{marginLeft:"-15px"}}> <Route path='/reactresume' exact component={ReactResume} />
      </div>
 <div id='center'>    <Route path='/' exact component={Home}></Route>
-<Route path ="/about" exact component ={About} ></Route>
+
 <Route path='/scrolling' exact compoent={ScrollingApp}> </Route>
 
  </div> */}
 
-  
-{/* 
+          {/* 
         <Col sm={2}className='b' style={{marginLeft:"20%" }}>
         
         <div style={{width: "40vw"}} className=""> 
@@ -69,16 +74,14 @@ function App() {
 </div>
 
         </Col> */}
-        
-      
-      </div>  
-     
+        </div>
       </div>
 
-<div className='absolutebottom'> <FooterPage  /> </div>
-     
-
-   </BrowserRouter>
+      {/* <div className="absolutebottom" style={{position:"absolute", width:'98w'}} >
+        
+        <FooterPage  />
+      </div> */}
+    </BrowserRouter>
   );
 }
 

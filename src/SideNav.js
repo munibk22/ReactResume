@@ -1,7 +1,7 @@
 import React from'react';
 import { NavLink} from 'react-router-dom'
 import './App.css'
-import {Nav } from 'react-bootstrap'
+import { } from 'react-bootstrap'
 import myImage from'./pics/munib.jpg'
 
 
@@ -11,8 +11,8 @@ function SideNav(){
     return(
     
     
-    <Nav  expand="md" className="sticky " style={{ margin:"0", width: "15.5rem",
-     height:"94vh" ,overflow: "hidden"}}>    
+    <nav  expand="md" className="" style={{ margin:"0", width: "15.5rem",
+     height:"" ,overflow: "", maxHeight:''}}>    
      
 
 <div>
@@ -99,7 +99,7 @@ style={{borderRadius:"50%", boxShadow:"8px 5px 5px slategrey, -.2em 0 .4em slate
       
        </div>
        
-    </Nav >)
+    </nav >)
 }
 
 export default SideNav;

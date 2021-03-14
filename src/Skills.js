@@ -29,7 +29,7 @@ this.state= {
         </p > 
  
 
-<ul style={{lineHeight:"2.5"}}> 
+<ul style={{lineHeight:"2.5", fontSize:'.9em'}}> 
     <Row>HTML5</Row>
     <Row>CSS</Row>
     <Row>JAVASCRIPT</Row>       
@@ -49,13 +49,13 @@ this.state= {
 Back End Development: 
         </p > 
 
-<ul style={{lineHeight:"2.5"}}>
+<ul style={{lineHeight:"2.5", fontSize:'.9em'}}>
         <Row>MICROSOFT SQL</Row>
         <Row>AXIOS</Row>
         <Row>C#</Row>
          <Row>NODE JS</Row>
         <Row>JSON and AJAX </Row>    
-
+        <Row>POSTMAN </Row> 
         </ul>
         </Col> 
     </div>
@@ -64,7 +64,7 @@ Back End Development:
     <div className="col">
     Remove Component:
       <p></p>
-      <button className="btn btn-success btn-sm" onClick={this.btnClickHandlerText}>Click ME</button>
+      <button className="btn btn-danger btn-sm" onClick={this.btnClickHandlerText}>Click ME</button>
 </div>
      
     </Row>
