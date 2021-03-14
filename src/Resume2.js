@@ -1,101 +1,116 @@
-import React from 'react'
-import Softskills from'./SoftSkills'
-import Skills from'./Skills'
-import {Row, Col} from 'react-bootstrap';
-import Dynamic from './Dynamic'
-import Education from './Education'
-import Sunset from './pics/sunset.jpg'
-import Moon from './pics/moon.png'
-import Moonb from './pics/moonb.jpeg'
-
+import React from "react";
+import Softskills from "./SoftSkills";
+import Skills from "./Skills";
+import { Row, Col } from "react-bootstrap";
+import Dynamic from "./Dynamic";
+import Education from "./Education";
+import Sunset from "./pics/sunset.jpg";
+import Moon from "./pics/moon.png";
+import Moonb from "./pics/moonb.jpeg";
+import SliderInfo from "./SliderInfo";
 export default function Resume2() {
-    return (
-        <div  >
-            
-<div  className="relative">
-    
+  return (
+    <div>
+      <div className="relative">
+        <Row
+          className="absolute"
+          style={{ margin: "", marginLeft: "1%", marginTop: "1%" }}
+        >
+          {/* <Col
+            md="auto"
+            className="hbox hexgrid1"
+            style={{ marginRight: "-15px" }}
+          >
+            <Row className="d-flex flex-row">
+              <div className="hexagon"></div>
+            </Row>
 
-<Row className='absolute' style={{ margin:"", marginLeft:"1%" , marginTop:"1%" }}>
+            <Row className="d-flex ">
+              <div className="hexagon"></div>
+            </Row>
+          </Col> */}
 
+          {/* <Col md="auto">
+            <h4 style={{ color: "white", textAlign: "", margin: "auto" }}>
+              Munib Khan Resume
+            </h4>
+          </Col> */}
 
-<Col  md="auto" className='hbox hexgrid1'>
-
-    <Row className="d-flex flex-row">
-    	
-            <div className="hexagon"></div>
-            <div className="hexagon"></div>
-    </Row>
-
-    <Row className="d-flex flex-row-reverse">
-   
-            <div className="hexagon"></div>
-            <div className="hexagon"></div>
-    </Row>
-</Col>
-
-<Col  md="auto">
-    <h4 style={{color:"white", textAlign:"", margin:"auto"}}>Munib Khan Resume</h4>
-</Col>
-
-
-{/* <div > 
+          {/* <div > 
 <hr className="hrEnd"></hr>
 <p></p>
  <hr className="hrEnd"></hr>
   </div> */}
+        </Row>
 
-</Row>
+        <img src={Moonb} alt="" className="imgstyle " style={{ zIndex: "" }} />
 
-<img 
-src= {Moonb}
+        <div className="backdrop"></div>
 
- alt="" className='imgstyle' 
- style={{}}   />
-
-<div className='backdrop'></div>
-
-<div className="absoluteTop backdropred " style={{}}>
-      
- </div> 
-{/* <div className="absoluteTop componentBoxB" style={{ maxHeight:'100%', height:'900px', overflow:'hidden', zIndex:"2"}}>
+        <div className="absoluteTop backdropred " style={{}}></div>
+        {/* <div className="absoluteTop componentBoxB" style={{ maxHeight:'100%', height:'900px', overflow:'hidden', zIndex:"2"}}>
       <SideNav  />
  </div>  */}
-  <div className=" moon "
-style={{color:'white', marginLeft:'8%',marginRight:'25%'}}>
-    < img src= {Moon} className='up ' alt='' />
- </div>
-    <div className="absolute marginautomod "
-style={{color:'white', marginLeft:'5%'}}>
-    <p></p><h1><strong>Hello World</strong> </h1></div>
-    
- </div>
-
- 
-<section style={{maxWidth:"98vw"}}> 
-<div className='section' style={{ maxWidth:""}}>
-    <Dynamic /></div> 
-    
- <div style={{ width:"100vw", margin:"auto", marginTop:"5%",textAlign:'center', color:'white'}}>
-     <h2>Skills and Education</h2>
-     <hr className='hrRed' />
-     </div>
-
-
-    <div className='componentBox2 section ' ><Skills /></div> 
-    <div className='componentBox2 section '><Softskills /></div>
-    <div className='componentBox2 section'><Education /></div>
-    
-
-
-    <div style={{ width:"100vw", margin:"auto", marginTop:"5%", textAlign:'center', color:'white'}}>
-     <h2>About Me and Experience</h2>
-     <hr className='hrRed' />
-     </div>
-
-    <div className='componentBox2'><Softskills /></div>
-    <div className='componentBox2'> <Skills /> </div>
-
-</section>
+        <div
+          className=" moon "
+          style={{ color: "white", marginLeft: "8%", marginRight: "25%" }}
+        >
+          <img src={Moon} className="up " alt="" />
         </div>
-    )
+        <div className="relativeb " style={{}}>
+          <SliderInfo />
+        </div>
+      </div>
+
+      <section style={{ maxWidth: "98vw" }}>
+        <div className="section" style={{ maxWidth: "" }}>
+          <Dynamic />
+        </div>
+
+        <div
+          style={{
+            width: "100vw",
+            margin: "auto",
+            marginTop: "5%",
+            textAlign: "center",
+            color: "white",
+          }}
+        >
+          <h2>Skills and Education</h2>
+          <hr className="hrRed" />
+        </div>
+
+        <div className="componentBox2 section ">
+          <Skills />
+        </div>
+        <div className="componentBox2 section ">
+          <Softskills />
+        </div>
+        <div className="componentBox2 section">
+          <Education />
+        </div>
+
+        <div
+          style={{
+            width: "100vw",
+            margin: "auto",
+            marginTop: "5%",
+            textAlign: "center",
+            color: "white",
+          }}
+        >
+          <h2>About Me and Experience</h2>
+          <hr className="hrRed" />
+        </div>
+
+        <div className="componentBox2">
+          <Softskills />
+        </div>
+        <div className="componentBox2">
+          {" "}
+          <Skills />{" "}
+        </div>
+      </section>
+    </div>
+  );
 }
