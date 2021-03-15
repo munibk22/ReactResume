@@ -10,7 +10,7 @@ import Moonb from "./pics/moonb.jpeg";
 import SliderInfo from "./SliderInfo";
 export default function Resume2() {
   return (
-    <div>
+    <div className="absoluteTop">
       <div className="relative">
         <Row
           className="absolute"

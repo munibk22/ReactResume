@@ -22,6 +22,7 @@ export default function SliderInfo() {
         style={{
           zIndex: "3",
           maxWidth: "800px",
+          textAlign: "center",
         }}
       >
         <h1> Munib Khan Resume</h1>
@@ -31,9 +32,9 @@ export default function SliderInfo() {
           Aliquip incem amet sunt. In sunt laborum fugiat consectetur magna
           incididunt culpa aliqua nostrud exercitation sint commodo quis.
         </p>
-        <a href="/" className="btn btn-lg btn-success">
-          Sign up Today
-        </a>
+        <button className="btn btn-lg btn-success " disabled></button>
+        <button className="btn btn-lg btn-primary " disabled></button>
+        <button className="btn btn-lg btn-danger " disabled></button>
       </div>
     </div>
   );
