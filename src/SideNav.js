@@ -156,8 +156,7 @@ function SideNav() {
           </ul>
 
           <br></br>
-          <br></br>
-          <br></br>
+
           <div
             style={{ textAlign: "center", fontSize: ".6em" }}
             className=" text-muted"

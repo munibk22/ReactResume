@@ -17,6 +17,14 @@ font-size: 85%;
   z-index: 3 !important;
 }
 
+.flexcontainer {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+  padding:1%;
+}
+
+
 section {
   display: flex;
   flex-wrap: wrap;
@@ -572,4 +580,22 @@ width:99.5vw;
 .fancy span:after {
   left: 100%;
   margin-left: 15px;
+}
+
+
+.skill {
+  float: left;
+  padding: 0px; 
+}
+
+.skillred {
+  background: red;
+}
+
+.skillyellow {
+  background: yellow;
+}
+
+.skillgreen {
+  background: green;
 }
