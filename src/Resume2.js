@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Softskills from "./SoftSkills";
 import Skills from "./Skills";
 import { Row, Col } from "react-bootstrap";
 import Dynamic from "./Dynamic";
 import Education from "./Education";
-import Sunset from "./pics/sunset.jpg";
 import Moon from "./pics/moon.png";
 import Moonb from "./pics/moonb.jpeg";
 import SliderInfo from "./SliderInfo";
+
 export default function Resume2() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="absoluteTop">
       <div className="relative">
