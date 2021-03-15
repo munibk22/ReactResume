@@ -21,7 +21,7 @@ const LandingImg = () => {
               className=" imgLanding fluid center "
               style={{
                 justifyContent: "center",
-                zIndex: "-2",
+                zIndex: "-3",
               }}
             />
             <div

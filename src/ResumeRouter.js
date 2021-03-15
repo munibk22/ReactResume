@@ -9,20 +9,6 @@ import CarouselApp from "./Carousel";
 function ResumeRouter() {
   return (
     <div>
-      {/*          
-        <div className="row align-items-center">
-
-    <button href="/about"  className='Box' >
-      One of three columns
-    </button>
-    <button className='Box ' >
-      One of three columns
-    </button>
-    <button className='Box ' >
-      One of three columns
-    </button>
-  </div>          */}
-
       <Link to="/reactresume">
         <button className="box threedhover" id="" style={{ margin: "25px" }}>
           React Resume:
@@ -62,58 +48,6 @@ function ResumeRouter() {
             src={Rasp}
             alt=""
             className="rotated sidescroll"
-            style={{ width: "55px", height: "60px", marginTop: "10%" }}
-          />
-        </button>
-      </Link>
-      <Link to="/reactresume">
-        <button className="box threedhover" id="" style={{ margin: "25px" }}>
-          {" "}
-          React Resume:
-          <div></div>
-          <img
-            src={Logo}
-            alt=""
-            class="rotate"
-            style={{ width: "55px", height: "60px", marginTop: "10%" }}
-          />
-        </button>
-      </Link>
-      <Link to="/reactresume">
-        <button className="box threedhover" id="" style={{ margin: "25px" }}>
-          {" "}
-          React Resume:
-          <div></div>
-          <img
-            src={Logo}
-            alt=""
-            class="rotate"
-            style={{ width: "55px", height: "60px", marginTop: "10%" }}
-          />
-        </button>
-      </Link>
-      <Link to="/reactresume">
-        <button className="box threedhover" id="" style={{ margin: "25px" }}>
-          {" "}
-          React Resume:
-          <div></div>
-          <img
-            src={Logo}
-            alt=""
-            class="rotate"
-            style={{ width: "55px", height: "60px", marginTop: "10%" }}
-          />
-        </button>
-      </Link>
-      <Link to="/reactresume">
-        <button className="box threedhover" id="" style={{ margin: "25px" }}>
-          {" "}
-          React Resume:
-          <div></div>
-          <img
-            src={Logo}
-            alt=""
-            class="rotate"
             style={{ width: "55px", height: "60px", marginTop: "10%" }}
           />
         </button>
