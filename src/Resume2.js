@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Softskills from "./SoftSkills";
 import Skills from "./Skills";
-import { Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import Dynamic from "./Dynamic";
 import Education from "./Education";
 import Moon from "./pics/moon.png";
