@@ -8,7 +8,7 @@ export default function CarouselApp() {
   return (
     <div>
       <div className="carouselitem ">
-        <div className="container absolutebottom active ">
+        <div className="container absolutebottom  ">
           <h1>Example Headline</h1>
           <p>
             Non ex amet id officia sunt ipsum irure velit ut labore. Ea aliquip
