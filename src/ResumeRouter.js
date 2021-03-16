@@ -1,16 +1,15 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from "./pics/logob.png";
 import Rose from "./pics/cloud.png";
 import Rasp from "./pics/rasp.png";
 //import Html from'./pics/htmllogo.png';
-import CarouselApp from "./Carousel";
 
 function ResumeRouter() {
   return (
-    <div>
+    <div style={{}}>
       <Link to="/reactresume">
-        <button className="box threedhover" id="" style={{ margin: "25px" }}>
+        <button className="box threedhover " id="" style={{ margin: "25px" }}>
           React Resume:
           <div></div>
           <img

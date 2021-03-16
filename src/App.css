@@ -1,28 +1,68 @@
+.dropdown-toggle{
+ 
+  color:white !important;
+}
+
+.collapsed  {
+  background:#b90a22;
+  color:white !important;
+}
 .navbar{
 background: transparent !important;
 z-index: 6;
 font-size: 85%;
+
 }
-.carouselitem {
+
+.navbar-toggler-icon{
+  background:#d10c26;
+  color:white !important;
+
+}
+.carousel-item {
   height:32rem;
-  background: #777;
+ 
   color:white;
   position: relative;
-  width:80vw;
+ 
+  float: none;
+  border-radius:0% !important;
+  
+
 }
+
 .container
 {
+  height:32rem;
+  text-align: center;
   color:white;
-  padding-bottom: 50px;
-  z-index: 3 !important;
+  
+  
 }
+
+
+.ca{
+  margin-left: 4%;
+}
+
+.containerB
+{
+  
+width:50vw;
+background: transparent !important;
+}
+.carousel-control-prev ,.carousel-control-next{
+  display:none;
+}
+
 
 .flexcontainer {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  background-color: DodgerBlue;
   padding:1%;
+  font-size: .9rem;
+  font-family: sans-serif;
 }
 
 
@@ -31,6 +71,7 @@ section {
   flex-wrap: wrap;
   margin:auto;
   justify-content: center;
+  flex-basis: 100%;
 }
 
 .section {
@@ -75,7 +116,7 @@ rgba(255, 255, 255, 0.3)
 box-shadow: 5px 5px 4px slategray ;
  max-width: 410px;
  border-radius: 5%;
-
+ width: 100%;
  overflow: hidden;
 }
 
@@ -90,17 +131,15 @@ box-shadow: 5px 5px 4px slategray ;
 .resumecomponents{
 
    text-align: center; 
-   line-height: 2.2;
-  font-size: .9rem;
-  color: seashell;
-}
-.resumecomponents{
-
-   text-align: center; 
    line-height: 2;
-  font-size: .9rem;
+  font-size: .8rem;
   color: seashell;
+   text-align: center; 
+  /* font-size: 89%; */
+  width:100%;
+  max-width: 540px;
 }
+
 
 
 .componentBox:hover { 
@@ -122,10 +161,11 @@ box-shadow: 5px 5px 4px slategray ;
   }
 
   .componentBoxC{
-    flex: 50%;
+    display:flex;
     }
+    
     .componentBoxD{
-      flex: 10%;
+      flex: 80%;
       }
 /* .col{
 padding: 0px;
@@ -137,10 +177,10 @@ padding: 0px;
   cursor: default;
   position: relative;
   /* background-position: 50% calc(50% + 0px); width:70vw; */
-height:80vh;
+height:56rem;
   max-height: 970px;
   background-attachment: scroll;
-  width:100vw;
+
 opacity:.8;
 }
 
@@ -158,11 +198,12 @@ opacity:.8;
   cursor: default;
   position: relative;
   /* background-position: 50% calc(50% + 0px); width:70vw; */
-height:38rem;
-  max-height: 750px;
+height:44rem;
+  max-height: 950px;
   background-attachment: scroll;
-  width:79vw;
-  max-width:90vw;
+  width:100%;
+  box-shadow:
+   2px 2px 2px #0528c5c4, -2px -2px 2px #0528c5c4;
 }
 
 .box{
@@ -238,7 +279,7 @@ font-size:1.8rem;
   }
 }
 
-.active{
+.activeb{
   color:red;
   list-style: none;
   border-radius: 999px;
@@ -296,17 +337,20 @@ height: 1px;
  
  }
  .bgColor{
-   background-color: seashell;
+   background-color: rgb(240, 224, 212);
    color:black;
-   border-radius: 5%;
+  
+   font-size:.8rem;
+   /* text-align: center;  */
+   line-height: 2;
    
  }
 
  .fColor{
   color:rgb(28, 230, 21);
-  font-size:.9em;
+  font-size:.8rem;
    text-align: center; 
-   line-height: 2;;
+   line-height: 2;
 }
 
 .sticky{
@@ -332,6 +376,17 @@ height: 1px;
   position:absolute;
   top:0;
   z-index: 3;
+  left:0;
+  right:0;
+}
+
+.absoluteTopMid{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+
+  z-index: 3;
 }
 .absoluteLeft{
   position:absolute;
@@ -344,10 +399,9 @@ height: 1px;
 .absolutebottom{
   position:absolute;
   bottom:0;
-  left:0;
+left:0;
   right:0;
- 
-width:99.5vw;
+  left:0;
 }
 .absoluteright{
   position:absolute;
@@ -368,45 +422,42 @@ width:99.5vw;
 } 
 
 .center { 
-   /*  
-  margin-top: 5% ;
-  margin-bottom: 50%;
-  margin-left: 25%;
-  */
+  
   display: block;
   margin-left: auto;
   margin-right: auto;
  
  }
 .backdrop{
-  background: linear-gradient(to bottom, #060707 0%, #020202, #000000,  rgb(2, 1, 2),  #000000
-
-  100%);
-  width: 99.8%;
+  background:  #000000;
+  width: 100%;
   height: 100%;
   opacity: .4;
   position: absolute;
   top: 0;
   left: 0;
-/* 
-  #000000
-  #2A272A
-  #4B4A54
-  #677381
-  #82A0AA
-  #A3CFCD
-   */
-}
 
+}
+.backdrop{
+
+  width: 100%;
+  height: 100%;
+  opacity: .4;
+   top: 0;
+  left: 0;
+  background-position:cover;
+
+}
 .backdropred{
   background: rgb(246, 60, 60)  ;
   z-index: -4;
-  width: 99.8%;
-  height: 100%;
-  opacity: .6;
-  position: absolute;
   top: 0;
-  left: 0;
+  right:0;
+  left:0;
+  bottom:0;
+  opacity: .6;
+  position: absolute;  
+  max-height: 99%;
 /* 
   #000000
   #2A272A
@@ -493,9 +544,9 @@ width:99.5vw;
   /* margin: auto; */
   top:0;
   bottom:70%;
-  left:38%;
+  left:36%;
   position:absolute;
-  z-index: 1;
+ 
 }
 .rotate{
   animation: App-logo-spin linear 10s infinite;
@@ -599,4 +650,130 @@ width:99.5vw;
 
 .skillgreen {
   background: green;
+}
+
+#mySlider{
+  display: block;
+}
+.overlayimg{
+  position:absolute;
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+
+    opacity: .2;
+    background:  #000000 ;
+  background-position: center;
+  background-size: cover;
+  }
+
+.overlay-image{
+  position:absolute;
+  top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+      top: 0;
+      background-position: center;
+      background-size: cover;
+opacity: .2;
+background:  #000000 ;
+  }
+
+
+ @media (max-width: 840px) 
+{
+  .h  {
+      display: none;
+  }
+}
+
+.hide{
+  
+  display:none;
+}
+
+@media (max-width: 1190px) 
+{
+  .imgLanding 
+  {
+    width:100%;
+  }
+}
+  @media (max-width: 1350px) 
+{
+  .componentBoxB 
+  {
+    display:none;
+  }
+
+}
+@media (max-width: 850px) 
+{
+  .backdropred 
+  {
+    height:45rem;
+   
+  }
+}
+@media (max-width: 850px) 
+{
+  .imgstyle 
+  {
+    height:36rem;
+
+    
+  }
+}
+
+ 
+@media (max-width: 800px) 
+{
+  .moon 
+  {
+     left:0;
+    width:10%;
+  }
+}
+
+
+@media (max-width: 640px) 
+{
+  .center
+  {
+    margin-left:9%;
+  
+    
+  }
+}
+
+.landingdiv
+{
+ width:100%;
+  
+}
+
+@media (max-width: 850px) 
+{
+   .imgLanding 
+  {
+   max-height: 25rem;
+  }
+}
+@media (max-width: 850px) 
+{
+  .landingdiv
+  {
+    max-height: 25rem;
+  }
+}
+
+#root{
+  font-family: Gotham Rounded;
+
+}
+body {
+  margin: 0;
+  background-color: lightblue;
 }

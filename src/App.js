@@ -1,14 +1,13 @@
 import React from "react";
 import NavBar from "./NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Incrementb from "./Increment";
+import Increment from "./Increment";
 import Pass from "./PokemonApp";
 import ScrollingApp from "./ScrollingApp";
-import { Container, Row, Col } from "react-bootstrap";
 import { BrowserRouter, Route } from "react-router-dom";
 import ReactResume from "./ReactResume";
 import About from "./About";
-
+import SliderResume from "./SliderResume";
 import Events from "./Events";
 import ItemDetail from "./ItemDetail";
 import Home from "./Home";
@@ -19,33 +18,25 @@ import LandImg from "./LandingImg";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="" style={{ zIndex: "5" }}>
-        <NavBar />
-      </div>
-
-      <div className="" style={{ height: "" }}>
-        <div>
+    <div style={{ width: "85%" }} className="relative center">
+      <BrowserRouter>
+        <div className="relative center" style={{ zIndex: "5", width: "80%" }}>
+          <NavBar />
+        </div>
+        {/* <div expand="md"  
+className='componentBoxB' style={{ maxHeight:'700px' }}> 
+<Sidenav /></div>  */}
+        <Route path="/about" exact component={About}></Route>
+        <div className="absoluteTop">
           <Route exact path="/" component={LandImg} />
         </div>
 
-        <section>
-          {/* <div expand="md"  className='componentBoxB' style={{ maxHeight:'700px' }}> <Sidenav /></div>  */}
-
-          <div className="componentBoxC" style={{}}>
-            <Route path="/about" exact component={About}></Route>
-            <Route path="/htmlresume" exact component={Resume2} />
-            <Route path="/reactresume" exact component={Resume2} />
-            <Route path="/cleanresume" exact component={CleanResume} />
-          </div>
-
-          <div
-            className=" absolute marginautomod"
-            style={{ maxHeight: "", height: "" }}
-          >
-            {/* <Route path="/" exact component={Home}></Route> */}
-          </div>
-        </section>
+        <Route path="/htmlresume" exact component={Resume2} />
+        <Route path="/reactresume" exact component={Resume2} />
+        <Route path="/cleanresume" exact component={CleanResume} />
+        <Route path="/increment" component={Increment} />
+        <Route path="/events" component={Events} />
+        <Route path="/cars" component={SliderResume} />
 
         {/* < div className='absolutebottom'> <FooterPage /> </div> */}
         {/* <div id='' style={{marginLeft:"-15px"}}> <Route path='/reactresume' exact component={ReactResume} />
@@ -73,13 +64,13 @@ function App() {
 </div>
 
         </Col> */}
-      </div>
 
-      {/* <div className="absolutebottom" style={{position:"absolute", width:'98w'}} >
-        
-        <FooterPage  />
-      </div> */}
-    </BrowserRouter>
+        {/*    <div className="absolutebottom" style={{}}>
+          <FooterPage />
+        </div>
+         */}
+      </BrowserRouter>
+    </div>
   );
 }
 

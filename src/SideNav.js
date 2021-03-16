@@ -64,7 +64,7 @@ function SideNav() {
 
             <NavLink to="/" exact className="active">
               <li
-                className="btn-link active"
+                className="btn-link activeb"
                 style={{ backgroundColor: "#737373", color: "powderblue" }}
               >
                 Home
@@ -73,7 +73,7 @@ function SideNav() {
             <br></br>
             <NavLink to="/about" className="active">
               <li
-                className=" btn-link active"
+                className=" btn-link activeb"
                 style={{ backgroundColor: "#737373", color: "wheat" }}
               >
                 About
@@ -82,7 +82,7 @@ function SideNav() {
             <br></br>
             <NavLink to="/friends">
               <li
-                className="li btn-link active "
+                className="li btn-link activeb "
                 style={{ backgroundColor: "#737373 ", color: "powderblue" }}
               >
                 Friends
@@ -91,7 +91,7 @@ function SideNav() {
             <br></br>
             <NavLink to="/cars">
               <li
-                className="li btn-link  active "
+                className="li btn-link  activeb "
                 style={{ backgroundColor: "#737373", color: "wheat" }}
               >
                 Cars
@@ -101,7 +101,7 @@ function SideNav() {
             <br></br>
             <NavLink to="/events">
               <li
-                className="li btn-link active"
+                className="li btn-link activeb"
                 style={{ backgroundColor: "#737373", color: "powderblue" }}
               >
                 Events
@@ -110,7 +110,7 @@ function SideNav() {
             <br></br>
             <NavLink to="/userregister">
               <li
-                className="li btn-link active"
+                className="li btn-link activeb"
                 style={{ backgroundColor: "#737373", color: "wheat" }}
               >
                 Register{" "}
@@ -119,7 +119,7 @@ function SideNav() {
             <br></br>
             <NavLink to="/userform">
               <li
-                className="li btn-link active"
+                className="li btn-link activeb"
                 style={{ backgroundColor: "#737373", color: "powderblue" }}
               >
                 Product Info Form{" "}
@@ -128,7 +128,7 @@ function SideNav() {
             <br></br>
             <NavLink to="/scrolling">
               <li
-                className="li btn-link active"
+                className="li btn-link activeb"
                 style={{ backgroundColor: "#737373", color: "wheat" }}
               >
                 Scrolling App{" "}
@@ -137,7 +137,7 @@ function SideNav() {
             <br></br>
             <NavLink to="/increment">
               <li
-                className="li btn-link active"
+                className="li btn-link activeb"
                 style={{ backgroundColor: "#737373", color: "powderblue" }}
               >
                 Increment App{" "}
@@ -147,7 +147,7 @@ function SideNav() {
             <br></br>
             <NavLink to="/pokemon">
               <li
-                className="li btn-link active"
+                className="li btn-link activeb"
                 style={{ backgroundColor: "#737373", color: "wheat" }}
               >
                 Pokemon App{" "}

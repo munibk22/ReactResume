@@ -17,7 +17,7 @@ export default function Resume2() {
       <div className="relative">
         <Row
           className="absolute"
-          style={{ margin: "", marginLeft: "1%", marginTop: "1%" }}
+          style={{ margin: "", marginLeft: "", marginTop: "" }}
         >
           {/* <Col
             md="auto"
@@ -45,8 +45,14 @@ export default function Resume2() {
  <hr className="hrEnd"></hr>
   </div> */}
         </Row>
-
-        <img src={Moonb} alt="" className="imgstyle " style={{ zIndex: "" }} />
+        <div>
+          <img
+            src={Moonb}
+            alt=""
+            className="imgstyle  "
+            style={{ width: "100%" }}
+          />
+        </div>
 
         <div className="backdrop"></div>
 
@@ -58,7 +64,7 @@ export default function Resume2() {
           className=" moon "
           style={{ color: "white", marginLeft: "8%", marginRight: "25%" }}
         >
-          <img src={Moon} className="up " alt="" />
+          <img src={Moon} className="up " alt="" id="mySlider" />
         </div>
         <div className="relativeb " style={{}}>
           <SliderInfo />

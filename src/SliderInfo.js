@@ -1,4 +1,5 @@
 import React from "react";
+import SliderResume from "./SliderResume";
 
 export default function SliderInfo() {
   return (
@@ -7,15 +8,16 @@ export default function SliderInfo() {
         className="absolute marginautomod "
         style={{
           color: "white",
-          marginLeft: "7%",
+          marginLeft: "4%",
           marginTop: "-15px",
           zIndex: "3",
         }}
       >
-        <p></p>
-        <h1>
-          <strong>Hello World</strong>{" "}
-        </h1>
+        <p className="h">
+          <h1 style={{ textShadow: "3px 3px 2px slategray" }} id="mySlider">
+            <strong>Hello World</strong>
+          </h1>
+        </p>
       </div>
       <div
         className="container absolutebottom relativeb"
@@ -23,18 +25,10 @@ export default function SliderInfo() {
           zIndex: "3",
           maxWidth: "800px",
           textAlign: "center",
+          marginBottom: "7rem",
         }}
       >
-        <h1> Munib Khan Resume</h1>
-        <p>
-          Non ex amet id officia sunt ipsum irure velit ut labore. Ea aliquip
-          incididunt labore qui deserunt eu minim pariatur consequat proident.
-          Aliquip incem amet sunt. In sunt laborum fugiat consectetur magna
-          incididunt culpa aliqua nostrud exercitation sint commodo quis.
-        </p>
-        <button className="btn btn-lg btn-success " disabled></button>
-        <button className="btn btn-lg btn-primary " disabled></button>
-        <button className="btn btn-lg btn-danger " disabled></button>
+        <SliderResume />
       </div>
     </div>
   );
