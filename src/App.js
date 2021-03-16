@@ -15,10 +15,11 @@ import Resume2 from "./Resume2";
 import FooterPage from "./Footer";
 import CleanResume from "./CleanResume";
 import LandImg from "./LandingImg";
+import HomeImg from "./HomeImg";
 
 function App() {
   return (
-    <div style={{ width: "85%" }} className="relative center">
+    <div>
       <BrowserRouter>
         <div className="relative center" style={{ zIndex: "5", width: "80%" }}>
           <NavBar />
@@ -26,8 +27,13 @@ function App() {
         {/* <div expand="md"  
 className='componentBoxB' style={{ maxHeight:'700px' }}> 
 <Sidenav /></div>  */}
+        <div style={{ position: "relative", width: "85%", margin: "auto" }}>
+          <Route path="/" exact component={HomeImg} />
+        </div>
+
         <Route path="/about" exact component={About}></Route>
-        <div className="absoluteTop">
+
+        <div style={{ width: "85%" }} className="relative center ">
           <Route exact path="/" component={LandImg} />
         </div>
 

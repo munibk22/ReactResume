@@ -1,3 +1,8 @@
+.flexdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 .dropdown-toggle{
  
   color:white !important;
@@ -198,12 +203,13 @@ opacity:.8;
   cursor: default;
   position: relative;
   /* background-position: 50% calc(50% + 0px); width:70vw; */
-height:44rem;
+height:45rem;
   max-height: 950px;
   background-attachment: scroll;
   width:100%;
   box-shadow:
-   2px 2px 2px #0528c5c4, -2px -2px 2px #0528c5c4;
+   4px 4px 2px #0528c5c4, -4px -4px 2px #0528c5c4, .6;
+ 
 }
 
 .box{
@@ -388,6 +394,18 @@ height: 1px;
 
   z-index: 3;
 }
+
+.absoluteTopMidHome{
+  position:absolute;
+  top:-35rem;
+  left:0;
+  right:0;
+  bottom:auto;
+text-align: center;
+  z-index: 3;
+  color:whitesmoke;
+}
+
 .absoluteLeft{
   position:absolute;
   top:0;
@@ -758,9 +776,19 @@ background:  #000000 ;
 {
    .imgLanding 
   {
-   max-height: 25rem;
+   max-height: 30rem;
+ 
   }
 }
+@media (max-width: 850px) 
+{
+    .snav
+  {
+    
+  display:none;
+  }
+}
+
 @media (max-width: 850px) 
 {
   .landingdiv

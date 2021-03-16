@@ -8,7 +8,7 @@ function SideNav() {
   return (
     <nav
       expand="md"
-      className=""
+      className="snav"
       style={{
         margin: "0",
         maxWidth: "15.5rem",

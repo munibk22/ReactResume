@@ -1,5 +1,5 @@
 import React from "react";
-import Sunset from "./pics/sunset/d.jpg";
+
 import Sidenav from "./SideNav";
 import ResumeRouter from "./ResumeRouter";
 
@@ -14,47 +14,17 @@ const LandingImg = () => {
           position: "relative",
         }}
       >
-        <div>
-          <div>
-            <img
-              src={Sunset}
-              alt=""
-              className=" imgLanding fluid   "
-              style={{
-                justifyContent: "center",
-                zIndex: "-3",
-                position: "",
-                marginTop: "0%",
-              }}
-            />
-            <div className="overlay-image "></div>
-            <div
-              className=""
-              style={{
-                zIndex: "1",
-                position: "absolute ",
-              }}
-            >
-              <Carousel.Caption
-                style={{
-                  align: "center",
-                  zIndex: "1",
-                  marginLeft: "",
-                  width: "85vw",
-                }}
-              >
-                <h3> Home Page </h3>
-                <p>{}</p>
-              </Carousel.Caption>
-              <div className="overlayimg"></div>
-            </div>
-          </div>
-        </div>
+        <div></div>
       </div>
       <div style={{}} className="">
         <div
           className="componentBoxB  "
-          style={{ float: "left", maxHeight: "", display: "flex" }}
+          style={{
+            float: "left",
+            maxHeight: "",
+            display: "flex",
+            marginTop: "2%",
+          }}
         >
           <Sidenav />
         </div>
