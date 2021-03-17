@@ -1,3 +1,16 @@
+
+
+.flexCol {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction:column;
+  
+  width: 100%;
+
+}
+
+
 .flexdiv {
   display: flex;
   align-items: center;
@@ -5,20 +18,32 @@
 }
 .dropdown-toggle{
  
-  color:white !important;
+  color:#007bff !important;
 }
 
 .collapsed  {
-  background:#b90a22;
-  color:white !important;
-}
-.navbar{
-background: transparent !important;
-z-index: 6;
-font-size: 85%;
-
+  background:;
+  color:#007bff !important;
 }
 
+.navbarHome{
+  background-color: #15171ae1 !important;
+   font-size: 95%;
+  color:#007bff ;
+  border-radius: 1%;
+  height:3rem;
+  padding-bottom: 1%;
+  
+  }
+  .navbarHomeB{
+    background-color: #121416e1 !important;
+     font-size: 95%;
+    color:#007bff ;
+    border-radius: 1%;
+    height:2.6rem;
+    width:100vw;
+    z-index: 5;
+    }
 .navbar-toggler-icon{
   background:#d10c26;
   color:white !important;
@@ -123,6 +148,8 @@ box-shadow: 5px 5px 4px slategray ;
  border-radius: 5%;
  width: 100%;
  overflow: hidden;
+ color: white;
+ line-height: 2.2rem;
 }
 
 .componentBox3{
@@ -139,10 +166,10 @@ box-shadow: 5px 5px 4px slategray ;
    line-height: 2;
   font-size: .8rem;
   color: seashell;
-   text-align: center; 
+   
   /* font-size: 89%; */
   width:100%;
-  max-width: 540px;
+  max-width: 580px;
 }
 
 
@@ -182,7 +209,7 @@ padding: 0px;
   cursor: default;
   position: relative;
   /* background-position: 50% calc(50% + 0px); width:70vw; */
-height:56rem;
+height:54rem;
   max-height: 970px;
   background-attachment: scroll;
 
@@ -195,15 +222,13 @@ opacity:.8;
   
 @media screen and (min-width: 1200px);
 }
- .img {
-  background-color:transparent;
-}
+
 
 .imgLanding {
   cursor: default;
   position: relative;
   /* background-position: 50% calc(50% + 0px); width:70vw; */
-height:45rem;
+height:54rem;
   max-height: 950px;
   background-attachment: scroll;
   width:100%;
@@ -217,11 +242,10 @@ height:45rem;
   width:210px;
   box-shadow: 10px 5px 5px slategray ;
   background-color: #152738;
-
   display: inline-block;
  color:seashell;
- margin-right: 10%;
- margin: auto;
+  margin: auto;
+border-radius: 1%;
 }
 
 .dynamic{
@@ -343,8 +367,8 @@ height: 1px;
  
  }
  .bgColor{
-   background-color: rgb(240, 224, 212);
-   color:black;
+   background-color: rgb(233, 127, 47);
+   color:black !important;
   
    font-size:.8rem;
    /* text-align: center;  */
@@ -353,7 +377,7 @@ height: 1px;
  }
 
  .fColor{
-  color:rgb(28, 230, 21);
+  color:rgb(28, 230, 21) !important;
   font-size:.8rem;
    text-align: center; 
    line-height: 2;
@@ -367,7 +391,7 @@ height: 1px;
 
 .relative{
   position: relative;
-  /* z-index: -1; */
+
 }
 .relativeb{
   z-index: 4 !important;
@@ -380,8 +404,7 @@ height: 1px;
 
 .absoluteTop{
   position:absolute;
-  top:0;
-  z-index: 3;
+  top:0;  
   left:0;
   right:0;
 }
@@ -419,7 +442,7 @@ text-align: center;
   bottom:0;
 left:0;
   right:0;
-  left:0;
+  
 }
 .absoluteright{
   position:absolute;
@@ -698,11 +721,20 @@ width:99.5vw;
 opacity: .2;
 background:  #000000 ;
   }
+.car2{
 
+  text-align: center;
+  position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+}
 
  @media (max-width: 840px) 
 {
-  .h  {
+  .h ,.car2 {
       display: none;
   }
 }
@@ -745,7 +777,18 @@ background:  #000000 ;
   }
 }
 
- 
+
+@media (max-width: 850px) 
+{
+  .absoluteTopMidHome 
+  {
+    margin-top: 15rem;
+
+    
+  }
+}
+
+
 @media (max-width: 800px) 
 {
   .moon 
@@ -771,7 +814,10 @@ background:  #000000 ;
  width:100%;
   
 }
-
+.sn2{
+  opacity: 1;
+  display: block;
+}
 @media (max-width: 850px) 
 {
    .imgLanding 
@@ -780,12 +826,14 @@ background:  #000000 ;
  
   }
 }
-@media (max-width: 850px) 
+@media (max-width: 1310px) 
 {
-    .snav
+    .sn2
   {
     
-  display:none;
+    width:auto;
+    overflow: hidden;
+    display:none;
   }
 }
 
@@ -804,4 +852,24 @@ background:  #000000 ;
 body {
   margin: 0;
   background-color: lightblue;
+}
+
+.navbar{
+  background: transparent !important;
+
+  font-size: 1rem;
+  color:#007bff !important;
+padding-bottom: 1%;
+  }
+  
+  @media (max-width: 700px) 
+{
+  .navbarHome
+  {
+    margin-left: -10%;
+    z-index: 5 !important;
+    background: transparent !important;
+
+    font-size: 1rem;
+  }
 }

@@ -1,31 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import { Row, Col } from "react-bootstrap";
-import "./App.css";
+import "../App.css";
 
 export default function SoftSkills() {
+  const [isColor, setColor] = useState(false);
+  const [isBgColor, setBgColor] = useState(false)
+
+
   const btnClickHandler = () => {
-    document.getElementById("foo").setAttribute("class", "bgColor ");
+    // document.getElementById("foo").setAttribute("class", "bgColor ");
+    setBgColor(!isBgColor)
   };
 
   const btnClickHandlerText = () => {
-    document.getElementById("foo").setAttribute("class", "fColor ");
+    // document.getElementById("foo").setAttribute("class", "fColor ");
+    setColor(!isColor)
   };
 
   const btnClickHandlerOriginal = () => {
-    document.getElementById("foo").setAttribute("class", "resumecomponents ");
+    // document.getElementById("foo").setAttribute("class", "resumecomponents ");
+    if (isColor) { setColor(!isColor) }
+    else { }
+    if (isBgColor) {
+      setBgColor(!isBgColor)
+    }
+    else return
+
   };
 
   return (
-    <div id="foo" className="resumecomponents " style={{}}>
-      <div>
+    <div className={isBgColor ? "bgColor " : ""}  >
+      <div id="foo" className="resumecomponents" style={{}}>
+
         <div className="App-link">
           SOFT SKILLS
           <hr className="newhr"></hr>
         </div>
 
         <div className="row">
-          <div className="">
-            <ul style={{ fontSize: "" }}>
+          <div className={isColor ? "fColor" : ""}>
+            <ul style={{ fontSize: "" }} >
               <Row className="item2">Web Development:</Row>
               <Row>SLACK</Row>
               <Row>BOOT STRAP</Row>
@@ -38,7 +52,7 @@ export default function SoftSkills() {
           <div>
             <div className="item2">Software:</div>
 
-            <ul style={{ fontSize: "" }}>
+            <ul style={{ fontSize: "" }} className={isColor ? "fColor" : ""}>
               <Row>MICROSOFT OFFICE</Row>
               <Row>ADOBE CREATIVE SUITE</Row>
               <Row>MICROSOFT ACCESS</Row>
@@ -51,7 +65,7 @@ export default function SoftSkills() {
           </div>
 
           <Col className="fColor">
-            Change Text Color:
+            <div >  Change Text Color:</div>
             <p></p>
             <button
               className="btn btn-success btn-sm"

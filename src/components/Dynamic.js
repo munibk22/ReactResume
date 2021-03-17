@@ -7,7 +7,7 @@ export default function Dynamic() {
         <svg
           stroke="currentColor"
           fill="currentColor"
-          stroke-width="0"
+          strokeWidth="0"
           viewBox="0 0 24 24"
           color="#1a344d"
           height="80px"
@@ -27,7 +27,7 @@ export default function Dynamic() {
         <svg
           stroke="currentColor"
           fill="currentColor"
-          stroke-width="0"
+          strokeWidth="0"
           viewBox="0 0 24 24"
           color="#1a344d"
           height="80px"
@@ -45,7 +45,7 @@ export default function Dynamic() {
         <svg
           stroke="currentColor"
           fill="currentColor"
-          stroke-width="0"
+          strokeWidth="0"
           viewBox="0 0 24 24"
           color="#1a344d"
           height="80px"
@@ -63,7 +63,7 @@ export default function Dynamic() {
         <svg
           stroke="currentColor"
           fill="currentColor"
-          stroke-width="0"
+          strokeWidth="0"
           viewBox="0 0 24 24"
           color="#1a344d"
           height="80px"

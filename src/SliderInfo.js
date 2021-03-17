@@ -8,16 +8,16 @@ export default function SliderInfo() {
         className="absolute marginautomod "
         style={{
           color: "white",
-          marginLeft: "4%",
+          marginLeft: "5%",
           marginTop: "-15px",
           zIndex: "3",
         }}
       >
-        <p className="h">
+        <div className="h">
           <h1 style={{ textShadow: "3px 3px 2px slategray" }} id="mySlider">
             <strong>Hello World</strong>
           </h1>
-        </p>
+        </div>
       </div>
       <div
         className="container absolutebottom relativeb"

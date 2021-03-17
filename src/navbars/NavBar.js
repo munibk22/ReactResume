@@ -6,10 +6,11 @@ import { BrowserRouter } from "react-router-dom";
 let NavBar = () => {
   return (
     <Navbar
-      bg="dark"
+      bg=""
       variant="light"
       expand="md"
-      style={{ color: "white", height: "60px" }}
+      style={{ color: "white", height: "60px", zIndex: '5' }}
+      className=""
     >
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -27,7 +28,20 @@ let NavBar = () => {
             </Nav.Link>
           </BrowserRouter>
         </Nav>
-        {/* <span style={{ marginLeft: "0px" }}>
+        <div
+            style={{
+              width: "",
+              fontFamily: "Arial",
+              textAlign: "center",
+              fontSize: '2.2rem',
+              marginLeft:'-5%'
+            }}
+            className="center"
+          >
+            Home Page
+                   
+          </div>
+        <span style={{ marginLeft: "0px" }}>
           <button
             className="btn btn-sm"
             style={{ fontSize: ".8rem", padding: "-1%", marginRight: "5px" }}
@@ -47,10 +61,10 @@ https://cdn3.iconfinder.com/data/icons/UltimateGnome/256x256/actions/gnome-sessi
                   padding: "-1.5%",
                 }}
               ></img>
-              {} User Login
+              { } User Login
             </Nav.Link>{" "}
           </button>
-        </span> */}
+        </span>
 
         <span style={{ fontSize: ".7rem" }}>
           <img

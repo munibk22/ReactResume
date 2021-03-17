@@ -7,7 +7,7 @@ import Rasp from "./pics/rasp.png";
 
 function ResumeRouter() {
   return (
-    <div style={{}}>
+    <div style={{ marginLeft: "-1%" }}>
       <Link to="/reactresume">
         <button className="box threedhover " id="" style={{ margin: "25px" }}>
           React Resume:
@@ -15,7 +15,7 @@ function ResumeRouter() {
           <img
             src={Logo}
             alt=""
-            class="rotate"
+            className="rotate"
             style={{ width: "55px", height: "60px", marginTop: "10%" }}
           />
         </button>
@@ -59,7 +59,7 @@ function ResumeRouter() {
           <img
             src={Logo}
             alt=""
-            class="rotate"
+            className="rotate"
             style={{ width: "55px", height: "60px", marginTop: "10%" }}
           />
         </button>
@@ -102,7 +102,7 @@ function ResumeRouter() {
           <img
             src={Logo}
             alt=""
-            class="rotate"
+            className="rotate"
             style={{ width: "55px", height: "60px", marginTop: "10%" }}
           />
         </button>
@@ -138,6 +138,7 @@ function ResumeRouter() {
           />
         </button>
       </Link>
+
     </div>
   );
 }

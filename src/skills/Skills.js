@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ReactImg from "./pics/logob.png";
-import Sql from "./pics/rasp.png";
+import ReactImg from "../pics/logob.png";
+import Sql from "../pics/rasp.png";
 
 class Skills extends React.Component {
   constructor(props) {

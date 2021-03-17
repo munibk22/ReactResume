@@ -1,47 +1,45 @@
 import React from 'react';
-import {Row, Col, Container,Image} from 'react-bootstrap';
+import { Row, Col, Container, Image } from 'react-bootstrap';
 import './App.css'
-import SoftSkills from './SoftSkills'
-import Education from './Education'
-import Skills from './Skills'
-import ResumeTable from './ResumeTable'
+
+import ResumeTable from './skills/ResumeTable'
 
 
-export default function ReactResume(){
+export default function ReactResume() {
 
     return (
-        <div md="8" style={{ marginRight:"100%", marginLeft:""}} >
-   
+        <div md="8" style={{ marginRight: "100%", marginLeft: "" }} >
 
 
-<Container fluid="md" style={{ }} expand="sm">            
-<Row className='absolute' style={{ margin:"",marginLeft:"5px" ,marginTop:"10px" }}>
-<div  >
-     <hr className="hrNew" ></hr> 
-     <hr className="hrNew"></hr>
 
-</div>
+            <Container fluid="md" style={{}} expand="sm">
+                <Row className='absolute' style={{ margin: "", marginLeft: "5px", marginTop: "10px" }}>
+                    <div  >
+                        <hr className="hrNew" ></hr>
+                        <hr className="hrNew"></hr>
 
-<Col  md="auto" className='hbox hexgrid1'>
+                    </div>
 
-    <Row className="d-flex flex-row">
-    	
-            <div className="hexagon"></div>
-            <div className="hexagon"></div>
-    </Row>
+                    <Col md="auto" className='hbox hexgrid1'>
 
-    <Row className="d-flex flex-row-reverse">
-   
-            <div className="hexagon"></div>
-            <div className="hexagon"></div>
-    </Row>
-</Col>
+                        <Row className="d-flex flex-row">
 
-<Col  md="auto">
-    <h1 style={{color:"white", textAlign:"", margin:"auto"}}>Munib Khan Resume</h1>
-</Col>
+                            <div className="hexagon"></div>
+                            <div className="hexagon"></div>
+                        </Row>
 
-{/* <Col md="auto" className='hbox hexgrid1'>
+                        <Row className="d-flex flex-row-reverse">
+
+                            <div className="hexagon"></div>
+                            <div className="hexagon"></div>
+                        </Row>
+                    </Col>
+
+                    <Col md="auto">
+                        <h1 style={{ color: "white", textAlign: "", margin: "auto" }}>Munib Khan Resume</h1>
+                    </Col>
+
+                    {/* <Col md="auto" className='hbox hexgrid1'>
 
     <Row className="d-flex flex-row">
     		
@@ -55,37 +53,38 @@ export default function ReactResume(){
             <div className="hexagon"></div>
     </Row>
 </Col> */}
-<div > 
-<hr className="hrEnd"></hr>
-<p></p>
- <hr className="hrEnd"></hr>
-  </div>
+                    <div >
+                        <hr className="hrEnd"></hr>
+                        <p></p>
+                        <hr className="hrEnd"></hr>
+                    </div>
 
-</Row>
-    <Row className="relative" style={{width: "84vw"}} md="">
-  
-<Image src=            
-            "https://images.unsplash.com/photo-1506102383123-c8ef1e872756?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHw%3D&w=1000&q=80"
-                        
- alt=""
- className='imgstyle'
- //style={{maxWidth: "", opacity:"", maxHeight:"600px", width:"100%", backgroundAttachment:"scroll"}}
-   fluid  />
+                </Row>
+                <Row className="relative" style={{ width: "84vw" }} md="">
 
-<div className='backdrop'></div>
+                    <Image src=
+                        "https://images.unsplash.com/photo-1506102383123-c8ef1e872756?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHw%3D&w=1000&q=80"
 
-<div className="absolute marginauto"><h1> Hello World</h1></div>
-</Row>
+                        alt=""
+                        className='imgstyle'
+                        //style={{maxWidth: "", opacity:"", maxHeight:"600px", width:"100%", backgroundAttachment:"scroll"}}
+                        fluid />
 
-<Container> 
-<Row style={{padding:"0px"}}><ResumeTable /> </Row>
-</Container>
-  </Container>
+                    <div className='backdrop'></div>
 
-            
+                    <div className="absolute marginauto"><h1> Hello World</h1></div>
+                </Row>
 
-           
+                <Container>
+                    <Row style={{ padding: "0px" }}><ResumeTable /> </Row>
+                </Container>
+            </Container>
+
+
+
+
 
         </div>
-    
-    )}
+
+    )
+}

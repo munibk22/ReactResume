@@ -1,14 +1,14 @@
 import React from "react";
-import NavBar from "./NavBar";
+import NavBarResume from "./NavBarResume";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Increment from "./Increment";
-import Pass from "./PokemonApp";
-import ScrollingApp from "./ScrollingApp";
+import Increment from "./components/Increment";
+
+import ScrollingApp from "./components/ScrollingApp";
 import { BrowserRouter, Route } from "react-router-dom";
 import ReactResume from "./ReactResume";
-import About from "./About";
+import About from "./skills/About";
 import SliderResume from "./SliderResume";
-import Events from "./Events";
+import Events from "./components/Events";
 import ItemDetail from "./ItemDetail";
 import Home from "./Home";
 import Resume2 from "./Resume2";
@@ -16,27 +16,50 @@ import FooterPage from "./Footer";
 import CleanResume from "./CleanResume";
 import LandImg from "./LandingImg";
 import HomeImg from "./HomeImg";
+import HomeNavs from './navbars/HomeNavs'
+import Sidenav from "./navbars/SideNav";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
-        <div className="relative center" style={{ zIndex: "5", width: "80%" }}>
-          <NavBar />
-        </div>
-        {/* <div expand="md"  
-className='componentBoxB' style={{ maxHeight:'700px' }}> 
-<Sidenav /></div>  */}
-        <div style={{ position: "relative", width: "85%", margin: "auto" }}>
+
+
+        <div style={{ width: "90%" }} className="absoluteTop center">
+          <Route path='/reactresume' exact component={NavBarResume} />  </div>
+
+
+
+
+        <div style={{
+          position: "", width: "100%", margin: "auto", top: '0'
+        }}
+          className=''>
           <Route path="/" exact component={HomeImg} />
         </div>
-
+        <div className=''>
+          <div style={{}} className=" center">
+            <Route path='/' exact component={HomeNavs} />
+          </div>
+        </div>
         <Route path="/about" exact component={About}></Route>
-
-        <div style={{ width: "85%" }} className="relative center ">
-          <Route exact path="/" component={LandImg} />
+        <div style={{ paddingLeft: "1%" }} className=" ">
+          <Route exact path='/' component={Sidenav} />
+          {/* <div
+            className="componentBoxB"
+            style={{
+              float: "left",
+              maxHeight: "",
+              display: "flex",
+              marginTop: "1%",
+            }}
+          >
+            <Sidenav />
+          </div> */}
         </div>
 
+        <div className="relative center "></div>
+        <Route exact path="/" component={LandImg} />
         <Route path="/htmlresume" exact component={Resume2} />
         <Route path="/reactresume" exact component={Resume2} />
         <Route path="/cleanresume" exact component={CleanResume} />
@@ -71,10 +94,13 @@ className='componentBoxB' style={{ maxHeight:'700px' }}>
 
         </Col> */}
 
-        {/*    <div className="absolutebottom" style={{}}>
-          <FooterPage />
-        </div>
-         */}
+        {/* <div className="" style={{ bottom: '' }}>
+          <div style={{ bottom: '0px' }} className=' navbarHomeB '>
+
+          </div>
+        </div> */}
+
+
       </BrowserRouter>
     </div>
   );

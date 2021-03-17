@@ -1,13 +1,9 @@
 import React from "react";
-
-import Sidenav from "./SideNav";
 import ResumeRouter from "./ResumeRouter";
-
-import Carousel from "react-bootstrap/Carousel";
 
 const LandingImg = () => {
   return (
-    <div>
+    <div style={{ width: "88%", margin: "auto" }}>
       <div
         className=" landingdiv  "
         style={{
@@ -17,23 +13,23 @@ const LandingImg = () => {
         <div></div>
       </div>
       <div style={{}} className="">
-        <div
-          className="componentBoxB  "
+        {/* <div
+          className="componentBoxB"
           style={{
             float: "left",
             maxHeight: "",
             display: "flex",
-            marginTop: "2%",
+            marginTop: "1%",
           }}
         >
           <Sidenav />
-        </div>
+        </div> */}
 
         <div
           className="center"
           style={{
             justifyContent: "center",
-            maxWidth: "1000px",
+            maxWidth: "1100px",
             width: "65%",
             float: "",
             display: "flex",

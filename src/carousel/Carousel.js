@@ -1,8 +1,5 @@
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
-import Sunset from "./pics/sunset.jpg";
-import Moon from "./pics/moon.png";
-import Moonb from "./pics/moonb.jpeg";
+
 
 export default function CarouselApp() {
   return (

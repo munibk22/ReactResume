@@ -1,23 +1,30 @@
 import React from "react";
 import Sunset from "./pics/sunset/d.jpg";
-import Carousel from "react-bootstrap/Carousel";
+import Carousel2 from "./carousel/Carousel2";
 
 export default function HomeImg() {
   return (
-    <div>
-      <div>
+    <div className="" style={{ top: '0' }}>
+
+      <div className="relative">
         <img
           src={Sunset}
           alt=""
-          className=" imgLanding fluid   "
+          className=" imgLanding fluid  "
           style={{
             justifyContent: "center",
             zIndex: "-3",
-            position: "",
+
             marginTop: "0%",
           }}
         />
         <div className="overlay-image "></div>
+        <div className='car2 absoluteTopMidHome'
+          style={{
+            marginLeft: "-2%", width: '100vw'
+          }}
+        >
+          <Carousel2 />  </div>
         <div
           className=""
           style={{
@@ -25,18 +32,20 @@ export default function HomeImg() {
             position: "absolute ",
           }}
         >
-          <div
+          {/* <div
             style={{
-              width: "85vw",
-              fontFamily: "fantasy",
-              textAlign: "cemter",
+              width: "100vw",
+              fontFamily: "Arial",
+              textAlign: "center",
+              fontSize: '2.2rem',
             }}
             className="absoluteTopMidHome"
           >
-            <h3> Home Page </h3>
-            <p>{}</p>
-          </div>
-          <div className="overlayimg"></div>
+            Home Page
+                   
+          </div> */}
+
+
         </div>
       </div>
     </div>

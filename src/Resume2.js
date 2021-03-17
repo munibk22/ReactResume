@@ -1,12 +1,11 @@
 import React, { useEffect } from "react";
-import Softskills from "./SoftSkills";
-import Skills from "./Skills";
+
 import { Row } from "react-bootstrap";
-import Dynamic from "./Dynamic";
-import Education from "./Education";
+import ResumeTable from './skills/ResumeTable'
 import Moon from "./pics/moon.png";
 import Moonb from "./pics/moonb.jpeg";
 import SliderInfo from "./SliderInfo";
+
 
 export default function Resume2() {
   useEffect(() => {
@@ -14,6 +13,7 @@ export default function Resume2() {
   }, []);
   return (
     <div className="absoluteTop">
+
       <div className="relative">
         <Row
           className="absolute"
@@ -71,55 +71,11 @@ export default function Resume2() {
         </div>
       </div>
 
-      <section style={{ maxWidth: "98vw" }}>
-        <div className="section" style={{ maxWidth: "" }}>
-          <Dynamic />
-        </div>
+      <section><ResumeTable />  </section>
 
-        <div
-          style={{
-            width: "100vw",
-            margin: "auto",
-            marginTop: "5%",
-            textAlign: "center",
-            color: "white",
-          }}
-        >
-          <h2>Skills and Education</h2>
-          <hr className="hrRed" />
-        </div>
-
-        <div className="componentBox2 section ">
-          <Skills />
-        </div>
-        <div className="componentBox2 section ">
-          <Softskills />
-        </div>
-        <div className="componentBox2 section">
-          <Education />
-        </div>
-
-        <div
-          style={{
-            width: "100vw",
-            margin: "auto",
-            marginTop: "5%",
-            textAlign: "center",
-            color: "white",
-          }}
-        >
-          <h2>About Me and Experience</h2>
-          <hr className="hrRed" />
-        </div>
-
-        <div className="componentBox2">
-          <Softskills />
-        </div>
-        <div className="componentBox2">
-          {" "}
-          <Skills />{" "}
-        </div>
-      </section>
+      <div style={{ bottom: '0px', color: 'wheat' }} className=' navbarHomeB '>
+        @Munib Khan
+      </div>
     </div>
   );
 }
