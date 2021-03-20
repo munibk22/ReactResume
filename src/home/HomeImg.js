@@ -1,6 +1,7 @@
 import React from "react";
-import Sunset from "./pics/sunset/d.jpg";
-import Carousel2 from "./carousel/Carousel2";
+import Sunset from "../pics/sunset/d.jpg";
+import Carousel2 from "../carousel/Carousel2";
+import HomePageHeading from './HomePageHeading'
 
 export default function HomeImg() {
   return (
@@ -25,14 +26,22 @@ export default function HomeImg() {
           }}
         >
           <Carousel2 />  </div>
-        <div
+
+
+        <div className='car2 absoluteTopMidHome'
+          style={{
+            zIndex: "5", marginLeft: "", width: ''
+          }}
+        >
+          <HomePageHeading />  </div>
+        {/* <div
           className=""
           style={{
             zIndex: "1",
             position: "absolute ",
           }}
         >
-          {/* <div
+           <div
             style={{
               width: "100vw",
               fontFamily: "Arial",
@@ -43,10 +52,10 @@ export default function HomeImg() {
           >
             Home Page
                    
-          </div> */}
+          </div> 
 
 
-        </div>
+        </div> */}
       </div>
     </div>
   );

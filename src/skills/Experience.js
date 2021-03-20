@@ -12,7 +12,7 @@ export default function Experience() {
                 <div>
                     <div> Self-employed
                 2009 – Present </div>
-                    <div>
+                    <div className='col'>
                         SK KITCHEN STORE (a retail store) – Jefferson City, MO
                 </div>
                     <div>

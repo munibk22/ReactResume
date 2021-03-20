@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ReactImg from "../pics/logob.png";
 import Sql from "../pics/rasp.png";
+import Info from "../pics/nodejs.png";
+
 
 class Skills extends React.Component {
   constructor(props) {
@@ -16,8 +18,8 @@ class Skills extends React.Component {
 
   render() {
     return (
-      <Container
-        style={{}}
+      <div
+        style={{ width: '100%' }}
         className="resumecomponents resumedetails"
         id="skills"
       >
@@ -26,50 +28,44 @@ class Skills extends React.Component {
           <hr className="new1"></hr>
         </div>
 
-        <Row style={{ marginLeft: "1.5%" }}>
-          <div>
-            <Col>
-              <p className="item2 ">Frontend:</p>
+        <div style={{}} className="row">
+          <div className=" col">
 
-              <ul style={{ lineHeight: "", fontSize: ".9em" }}>
-                <Row>HTML5</Row>
-                <Row>CSS</Row>
-                <Row>JAVASCRIPT</Row>
-                <Row>C#</Row>
-                <Row>jQUERY</Row>
-              </ul>
-            </Col>
-          </div>
+            <ul style={{ lineHeight: "", fontSize: "" }}>
+              <div className="item2 ">Frontend:</div>
+              <div>REACT</div>
+              <div>HTML5</div>
+              <div>CSS</div>
+              <div>JAVASCRIPT</div>
+              <div>C#</div>
+              <div>jQUERY</div>
+            </ul>
 
-          <div>
-            <Col>
-              <p className="item2 ">Back End Development:</p>
+          </div >
 
-              <ul style={{ lineHeight: "", fontSize: ".9em" }}>
-                <Row>MICROSOFT SQL</Row>
-                <Row>API/Axios</Row>
-                <Row>POSTMAN </Row>
-                <Row>NODE.js</Row>
-                <Row>JSON and AJAX </Row>
-              </ul>
-            </Col>
+          <div style={{}} className="col">
+
+            <ul style={{ lineHeight: "", fontSize: ".9em" }}>
+              <div className="item2 ">Back End Development:</div>
+              <div>MICROSOFT SQL</div>
+              <div>API/AXIOS</div>
+              <div>POSTMAN </div>
+              <div>NODE.js</div>
+              <div>JSON and AJAX </div>
+            </ul>
+
           </div>
 
           <div className="col">
             <img
               alt=""
-              src="
-              
-              https://img1.pnghut.com/11/10/16/UNTygJCLuM/sign-trademark-logo-text-website-development.jpg
-
-
-              "
+              src={Info}
               style={{
-                height: "3rem",
-                width: "3rem",
+                height: "4rem",
+                width: "4rem",
                 margin: "2%",
-                marginTop: "25%",
-                marginBottom: "25%",
+                marginTop: "",
+                marginBottom: "20%",
               }}
             ></img>
             <img
@@ -78,9 +74,9 @@ class Skills extends React.Component {
               style={{
                 height: "3rem",
                 width: "3rem",
-                margin: "2%",
+                marginRight: "20%",
                 marginTop: "20%",
-                marginBottom: "25%",
+                marginBottom: "20%",
               }}
             ></img>
             <img
@@ -91,35 +87,13 @@ class Skills extends React.Component {
                 width: "3rem",
                 margin: "2%",
                 marginTop: "20%",
-                marginBottom: "25%",
+                marginBottom: "20%",
               }}
             ></img>
           </div>
-        </Row>
-        {/* <Row>
-<Col>
-<div  md="" className="item2 ">
-Programming: 
-        </div > 
-        <Row>HTML5</Row>
-        <Row>CSS</Row>
-        <Row>JAVASCRIPT</Row>
-        <Row>C#</Row>
-        <Row>jQUERY</Row>
-         <Row>NODE JS</Row>
-        <Row>BOOT STRAP</Row>
-        <Row>JSON and AJAX </Row>     
-</Col>
-</Row>
-<Row>
-<Col className="item2 md-auto">
-    
-Back End:
-<Row>HTML5</Row>
-</Col>
+        </div>
 
-</Row> */}
-      </Container>
+      </div>
     );
   }
 }

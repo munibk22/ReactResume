@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import PokemonList from './components/PokemonList';
 import axios from 'axios';
-import PaginationApp from '../Pagination';
+import PaginationApp from './Pagination';
 
 export default function Pass() {
     const [pokemon, setPokemon] = useState([]);

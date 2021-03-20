@@ -1,9 +1,50 @@
 
+.centerdiv{
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.wrapper{
+  margin:auto;
+  justify-content:center;
+  align-items:center;
+  
+  width:800px;
+   margin: auto;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   
+   height: 100%;
+  }
+ 
+ .flex-container {
+   display: flex;
+   flex-wrap: nowrap;
+   flex-direction:column;
+   background-color: yellow;
+   /* display: inline-block; */
+  flex:50%
+ }
+ 
+ .flex-container > div {
+   background-color: #f1f1f1;
+   width: 100px;
+   margin: 10px;
+   text-align: center;
+   line-height: 75px;
+   font-size: 30px;
+ }
 
 .flexCol {
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
+
   flex-direction:column;
   
   width: 100%;
@@ -14,7 +55,7 @@
 .flexdiv {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .dropdown-toggle{
  
@@ -40,10 +81,17 @@
      font-size: 95%;
     color:#007bff ;
     border-radius: 1%;
-    height:2.6rem;
-    width:100vw;
-    z-index: 5;
+    height:3rem;
+      z-index: 5;
+    margin-bottom: -55%;
     }
+    .navbarHomeC{
+      background-color: #2b2b2ce1 !important;
+       font-size: 95%;
+           height:3rem;
+        z-index: 5;
+     
+      }
 .navbar-toggler-icon{
   background:#d10c26;
   color:white !important;
@@ -101,13 +149,12 @@ section {
   flex-wrap: wrap;
   margin:auto;
   justify-content: center;
-  flex-basis: 100%;
+  
 }
 
 .section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
  
 }
 
@@ -144,12 +191,11 @@ rgba(255, 255, 255, 0.3)
 );
 
 box-shadow: 5px 5px 4px slategray ;
- max-width: 410px;
+ max-width: 420px;
  border-radius: 5%;
  width: 100%;
  overflow: hidden;
  color: white;
- line-height: 2.2rem;
 }
 
 .componentBox3{
@@ -162,14 +208,13 @@ box-shadow: 5px 5px 4px slategray ;
 
 .resumecomponents{
 
-   text-align: center; 
-   line-height: 2;
-  font-size: .8rem;
+   line-height: 1.8rem;
+  font-size: 1rem;
   color: seashell;
    
-  /* font-size: 89%; */
-  width:100%;
-  max-width: 580px;
+   font-size: 89%; 
+ max-height:600px ;
+  max-width: 650px;
 }
 
 
@@ -209,7 +254,7 @@ padding: 0px;
   cursor: default;
   position: relative;
   /* background-position: 50% calc(50% + 0px); width:70vw; */
-height:54rem;
+height:57rem;
   max-height: 970px;
   background-attachment: scroll;
 
@@ -228,7 +273,7 @@ opacity:.8;
   cursor: default;
   position: relative;
   /* background-position: 50% calc(50% + 0px); width:70vw; */
-height:54rem;
+height:56rem;
   max-height: 950px;
   background-attachment: scroll;
   width:100%;
@@ -289,6 +334,7 @@ display:flex;
   color: powderblue; 
 text-align: center;
 font-size:1.8rem;
+line-height:1.6;
 
 }
 
@@ -296,7 +342,6 @@ font-size:1.8rem;
   color:wheat;
   font-size:1rem ;
   
-  text-align: center;
  
 }
 
@@ -420,11 +465,9 @@ height: 1px;
 
 .absoluteTopMidHome{
   position:absolute;
-  top:-35rem;
-  left:0;
-  right:0;
-  bottom:auto;
-text-align: center;
+  display: flex;
+  align-items:  ;
+  justify-content: ;
   z-index: 3;
   color:whitesmoke;
 }
@@ -722,8 +765,6 @@ opacity: .2;
 background:  #000000 ;
   }
 .car2{
-
-  text-align: center;
   position: absolute;
     top: 35%;
     left: 0;
@@ -732,9 +773,9 @@ background:  #000000 ;
     
 }
 
- @media (max-width: 840px) 
+ @media (max-width: 852px) 
 {
-  .h ,.car2 {
+  .h ,.car2,.navbarHomeB {
       display: none;
   }
 }
@@ -817,6 +858,8 @@ background:  #000000 ;
 .sn2{
   opacity: 1;
   display: block;
+  box-shadow: -2px 0px 4px rgb(54, 53, 53),
+  2px 0px 4px rgb(54, 53, 53);
 }
 @media (max-width: 850px) 
 {

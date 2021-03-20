@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-
+import NavBarResume from "../navbars/NavBarResume";
 import { Row } from "react-bootstrap";
-import ResumeTable from './skills/ResumeTable'
-import Moon from "./pics/moon.png";
-import Moonb from "./pics/moonb.jpeg";
+import ResumeTable from '../skills/ResumeTable'
+import Moon from "../pics/moon.png";
+import Moonb from "../pics/moonb.jpeg";
 import SliderInfo from "./SliderInfo";
 
 
@@ -57,17 +57,24 @@ export default function Resume2() {
         <div className="backdrop"></div>
 
         <div className="absoluteTop backdropred " style={{}}></div>
-        {/* <div className="absoluteTop componentBoxB" style={{ maxHeight:'100%', height:'900px', overflow:'hidden', zIndex:"2"}}>
-      <SideNav  />
- </div>  */}
+
         <div
           className=" moon "
-          style={{ color: "white", marginLeft: "8%", marginRight: "25%" }}
+          style={{
+            color: "white", marginLeft: "8%",
+            marginRight: "25%", borderRadius: '40%'
+          }}
         >
-          <img src={Moon} className="up " alt="" id="mySlider" />
+          <img src={Moon} className="up " alt="" id="mySlider"
+            style={{ borderRadius: '25%' }} />
         </div>
         <div className="relativeb " style={{}}>
           <SliderInfo />
+          <div className='navbarHomeC' style={{}}>
+            <div style={{ width: "80%" }} className=" center">
+              <NavBarResume />  </div>
+
+          </div>
         </div>
       </div>
 

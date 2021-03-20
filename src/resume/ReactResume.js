@@ -1,8 +1,8 @@
 import React from 'react';
 import { Row, Col, Container, Image } from 'react-bootstrap';
-import './App.css'
+import '../App.css'
 
-import ResumeTable from './skills/ResumeTable'
+import ResumeTable from '../skills/ResumeTable'
 
 
 export default function ReactResume() {

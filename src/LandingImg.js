@@ -1,5 +1,5 @@
 import React from "react";
-import ResumeRouter from "./ResumeRouter";
+import ResumeRouter from "./resume/ResumeRouter";
 
 const LandingImg = () => {
   return (
@@ -33,6 +33,7 @@ const LandingImg = () => {
             width: "65%",
             float: "",
             display: "flex",
+            height: '100vh'
           }}
         >
           <ResumeRouter />

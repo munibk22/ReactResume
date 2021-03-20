@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "./pics/logob.png";
-import Rose from "./pics/cloud.png";
-import Rasp from "./pics/rasp.png";
+import Logo from "../pics/logob.png";
+import Rose from "../pics/cloud.png";
+import Rasp from "../pics/rasp.png";
 //import Html from'./pics/htmllogo.png';
 
 function ResumeRouter() {
   return (
-    <div style={{ marginLeft: "-1%" }}>
+    <div style={{ marginLeft: "-" }}>
       <Link to="/reactresume">
         <button className="box threedhover " id="" style={{ margin: "25px" }}>
           React Resume:
@@ -95,9 +95,9 @@ function ResumeRouter() {
           />
         </button>
       </Link>
-      <Link to="/reactresume">
+      <Link to="/recipes">
         <button className="box threedhover" id="" style={{ margin: "25px" }}>
-          React Resume:
+          Recipe Component:
           <div></div>
           <img
             src={Logo}

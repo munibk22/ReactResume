@@ -29,71 +29,73 @@ export default function SoftSkills() {
   };
 
   return (
-    <div className={isBgColor ? "bgColor " : ""}  >
-      <div id="foo" className="resumecomponents" style={{}}>
+    <div className={isBgColor ? "bgColor " : ""} style={{ width: '100%' }}  >
 
-        <div className="App-link">
-          SOFT SKILLS
+
+      <div className="App-link">
+        SOFT SKILLS
           <hr className="newhr"></hr>
+      </div>
+      <div id="foo" className="resumecomponents row" style={{ width: '100%' }}>
+
+        <div className="section col">
+
+          <div className={isColor ? "fColor" : ""}>
+            <ul style={{}} >
+              <div className="item2">Web Development:</div>
+              <div>SLACK</div>
+              <div>BOOT STRAP</div>
+              <div>GIT AND GITHUB</div>
+              <div>SWEETALERTS </div>
+              <div>TOASTR </div>
+            </ul>
+          </div>
         </div>
 
-        <div className="row">
-          <div className={isColor ? "fColor" : ""}>
-            <ul style={{ fontSize: "" }} >
-              <Row className="item2">Web Development:</Row>
-              <Row>SLACK</Row>
-              <Row>BOOT STRAP</Row>
 
-              <Row>GIT AND GITHUB</Row>
-              <Row>SWEETALERTS </Row>
-              <Row>TOASTR </Row>
-            </ul>
+        <div className="  col">
+          <div className="item2">Software:</div>
+          <div style={{ fontSize: ".9EM", width: '130%', display: 'noflex' }} className={isColor ? "fColor" : ""}>
+            <div>MICROSOFT OFFICE</div>
+            <div>ADOBE CREATIVE SUITE</div>
+            <div>MICROSOFT ACCESS</div>
+            <div>SVG</div>
+            <div>UNDRAW</div>
+            <div>PAPERJS</div>
+
           </div>
-          <div>
-            <div className="item2">Software:</div>
+        </div>
 
-            <ul style={{ fontSize: "" }} className={isColor ? "fColor" : ""}>
-              <Row>MICROSOFT OFFICE</Row>
-              <Row>ADOBE CREATIVE SUITE</Row>
-              <Row>MICROSOFT ACCESS</Row>
-              <Row>SVG</Row>
-              <Row>SKYCONS</Row>
-              <Row>UNDRAW</Row>
-              <Row>PAPERJS</Row>
-              <Row></Row>
-            </ul>
-          </div>
-
-          <Col className="fColor">
-            <div >  Change Text Color:</div>
-            <p></p>
-            <button
-              className="btn btn-success btn-sm"
-              onClick={btnClickHandlerText}
-            >
-              Click ME
+        <Col className="fColor">
+          <div >  Change Text Color:</div>
+          <p></p>
+          <button
+            className="btn btn-success btn-sm"
+            onClick={btnClickHandlerText}
+          >
+            Click ME
             </button>
-            <p></p>
+          <p></p>
             Change Background Color:
             <p></p>
-            <button
-              className="btn btn-primary btn-sm"
-              onClick={btnClickHandler}
-            >
-              Click ME
+          <button
+            className="btn btn-primary btn-sm"
+            onClick={btnClickHandler}
+          >
+            Click ME
             </button>
-            <p></p>
+          <p></p>
             Orginal State:
             <p></p>
-            <button
-              className="btn btn-danger btn-sm"
-              onClick={btnClickHandlerOriginal}
-            >
-              Click ME
+          <button
+            className="btn btn-danger btn-sm"
+            onClick={btnClickHandlerOriginal}
+          >
+            Click ME
             </button>
-          </Col>
-        </div>
+        </Col>
       </div>
     </div>
+
   );
 }
